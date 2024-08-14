@@ -1,0 +1,62 @@
+@import 'base/variables';
+
+// BANNER
+
+.banner {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 226px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 5;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(15, 18, 31, 0) 0%, rgb(15, 18, 31) 100%);
+    }
+
+    &-img__wrapper {
+        width: 100%;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    &-img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &-red {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: calc(449 / 1920 * 100%);
+        height: 100%;
+        width: calc(439 / 1920 * 100%);
+        background: $red-color;
+    }
+}
