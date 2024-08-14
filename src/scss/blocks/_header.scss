@@ -1,0 +1,117 @@
+.header {
+    width: 100%;
+    position: absolute;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        max-width: 87px;
+    }
+
+    &__nav {
+        padding-left: 74px;
+
+        &-list {
+            display: flex;
+            align-items: center;
+        }
+
+        &-list-item {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: calc(23.58 / 18 * 100%);
+            color: #ffffff;
+            position: relative;
+            transition: .4s all;
+            background: transparent;
+
+            &:hover {
+                background: #FFFFFF0A; 
+            }
+
+            &:hover .header__submenu {
+                opacity: 1;
+                pointer-events: all;
+            }
+
+            &>a {
+                padding: 25px;
+                display: inline-flex;
+                align-items: flex-end;
+                gap: 8px;
+            }
+
+            i {
+                font-size: 8px;
+                margin-bottom: 5.5px;
+                color: #fff;
+            }
+        }
+    }
+
+    &__submenu {
+        position: absolute;
+        top: 100%;
+        padding-top: 12px;
+        width: max-content;
+        pointer-events: none;
+        opacity: 0;
+        transition: .4s all;
+
+        &-wrapper {
+            border: 1px solid #FFFFFF33;
+        }
+
+        &-item {
+            font-size: 14px;
+
+            a {
+                background: #00000003;
+                padding: 8px 25px;
+                width: 100%;
+            }
+
+            a:hover {
+                background: #FFFFFF0A;
+            }
+        }
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        gap: 21px;
+        margin: 0 0 0 auto;
+
+        &-text {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: calc(21 / 16 * 100%);
+            color: #fff;
+        }
+
+        &-btn {
+            padding: 7.5px 17px;
+        }
+
+        &-search {
+            display: flex;
+            font-size: 17px;
+        }
+
+        &-cart {
+            display: flex;
+            font-size: 23px;
+            padding: 6.5px 19.5px;
+        }
+
+        &-burger {
+            display: none;
+            font-size: 14px;
+        }
+    }
+}
