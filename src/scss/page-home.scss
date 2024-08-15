@@ -61,10 +61,129 @@
     }
 }
 
+// PROMO
+
+.promo {
+    margin: 240px 0 80px;
+
+    &-slide {
+        position: relative;
+        display: none;
+        opacity: 0;
+        transition: .4s all;
+
+        &.active {
+            opacity: 1;
+            display: block;
+        }
+
+        &__details {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 634px;
+            height: 578px;
+        }
+
+        &__photo {
+            max-width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+
+        font-size: 20px;
+        font-weight: 400;
+        line-height: calc(22 / 20 * 100%);
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &-product {
+        display: flex;
+        align-items: center;
+        width: 343px;
+        gap: 29px;
+        padding: 15px 25px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: rgba(0, 0, 0, .2);
+        margin-bottom: 20px;
+
+        &__name {
+            margin: 0 24px 0 33px;
+        }
+
+        &__title {
+            font-size: 35px;
+            font-weight: 700;
+            line-height: calc(38.5 / 35 * 100%);
+            color: #ffffff;
+            text-transform: uppercase;
+            margin-bottom: 26px;
+        }
+
+        &__photo {
+            width: 140px;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__discount {
+            padding: 1px 7px;
+            background: $red-color;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: calc(21 / 16 * 100%);
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        &__price {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: calc(26 / 20 * 100%);
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        &__link {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: calc(18 / 14 * 100%);
+            color: #ffffff;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        &__actions {
+            width: 343px;
+            display: flex;
+            align-items: center;
+            gap: 11px;
+        }
+
+        &__action {
+            padding: 16px 5px;
+            width: 100%;
+            border-width: 1px;
+        }
+
+    }
+}
+
 // POPULAR
 
 .popular {
-    margin-top: 850px;
     margin-bottom: 60px;
 
     &__title {

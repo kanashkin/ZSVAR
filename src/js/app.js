@@ -93,7 +93,26 @@ function phoneMask() {
 	})
 }
 
+function promoSlider() {
+    const sliderEl = document.querySelector('.promo-slider')
+
+    if (sliderEl) {
+        const slides = document.querySelectorAll('.promo-slide')
+        const prevBtn = document.querySelector('.promo-slider__prev')
+        const nextBtn = document.querySelector('.promo-slider__prev')
+
+        function changeSlide(i) {
+            slides.forEach(function(slide) {
+                slide.classList.remove('active')
+            })
+
+            slides[i].classList.add('active')
+        }
+    }
+}
+
 window.addEventListener('DOMContentLoaded', function() {
     popularTabs()
     phoneMask()
+    promoSwiper()
 })
