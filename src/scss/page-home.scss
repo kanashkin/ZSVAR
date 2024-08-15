@@ -4,7 +4,7 @@
 
 .banner {
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     display: flex;
     top: 0;
     left: 0;
@@ -60,3 +60,59 @@
         background: $red-color;
     }
 }
+
+// POPULAR
+
+.popular {
+    margin-top: 120px;
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 17px;
+    }
+
+    &__tab {
+        padding: 9px 12px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: calc(17.6 / 16 * 100%);
+        color: #A5A5A5;
+        background: #080B15;
+        transition: .4s all;
+        cursor: pointer;
+    }
+
+    &__tab.active {
+        font-weight: 600;
+        color: #ffffff;
+        background: $red-color;
+    }
+
+    &__content {
+        display: none;
+        opacity: 0;
+        transition: .4s all;
+    }
+
+    &__content.active {
+        opacity: 1;
+        display: block;
+    }
+
+    &__content-wrapper {
+        position: relative;
+    }
+
+    &-swiper__nav {
+        position: absolute;
+        right: 0;
+        bottom: calc(100% + 30px);
+    }
+}
+

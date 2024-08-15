@@ -7,3 +7,40 @@
     line-height: calc(18 / 16 * 100%);
     color: #ffffff;
 }
+
+.swiper__nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &-btn {
+        display: flex;
+    }
+
+    &-btn i {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+// TITLES
+
+.title__wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.title__number {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: calc(17.6 / 16 * 100%);
+    color: $red-color;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: calc(35.2 / 32 * 100%);
+    color: #ffffff;
+}
