@@ -44,3 +44,54 @@
     line-height: calc(35.2 / 32 * 100%);
     color: #ffffff;
 }
+
+// FORM ELEMS
+
+.form-footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.form-accept {
+
+    &__input {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        opacity: 0;
+        z-index: 1;
+
+        &:checked + p::before {
+            background-image: url('../img/icons/input-check.svg');
+            background-position: center;
+            background-size: 8px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__text {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: calc(13.2 / 12 * 100%);
+        color: #ffffff;
+        padding-left: 24px;
+        position: relative;
+        max-width: calc(180px + 24px);
+
+        &::before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background-color: $red-color;
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+        }
+    }
+}
+
+.form-submit {
+    padding: 7.5px 44.5px;
+}

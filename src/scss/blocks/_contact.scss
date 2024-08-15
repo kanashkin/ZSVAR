@@ -1,0 +1,83 @@
+// CONTACT
+
+.contact {
+    margin-bottom: 80px;
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 173px;
+    }
+
+    &__form {
+        background: rgba(37, 45, 80, 0.6);
+        padding: 40px;
+        border: 1px solid transparent;
+        border-image-source: linear-gradient(154.04deg, rgba(124, 139, 196, 0.4) 0%, rgba(124, 139, 195, 0) 100%);
+        border-image-slice: 1;
+        max-width: 636px;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        &-text {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: calc(17.6 / 16 * 100%);
+            color: #ffffff;
+        }
+
+        &-inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &-input {
+            padding: 17px 16px;
+            background: rgba(47, 56, 92, 1);
+
+            &::placeholder {
+                color: rgba(255, 255, 255, .4);
+            }
+        }
+    }
+
+    &__data {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: calc(44 / 40 * 100%);
+        color: #ffffff;
+    }
+
+    &__phone {
+        margin-bottom: 15px;
+    }
+
+    &__email {
+        margin-bottom: 24px;
+    }
+
+    &__address {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: calc(17.6 / 16 * 100%);
+    }
+}
+
+// STYLES FOR PHONE MASK LIBRARY
+
+.iti--separate-dial-code .iti__selected-flag {
+    background: transparent;
+    padding: 17px 0 17px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: calc(17.6 / 16 * 100%);
+    color: #ffffff;
+}
