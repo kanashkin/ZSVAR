@@ -1,0 +1,63 @@
+// MAP
+
+.map {
+    padding: 58px 0;
+    position: relative;
+
+    &__el {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        display: flex;
+    }
+
+    &__wrapper {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__form {
+        max-width: 636px;
+        width: 100%;
+        padding: 50px 80px;
+        margin-left: auto;
+        background: rgba(15, 18, 31, 0.95);
+
+        &-title {
+            margin-bottom: 60px;
+        }
+
+        &-inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-bottom: 103px;
+        }
+    }
+
+    &__input {
+
+        &-label {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: calc(22 / 20 * 100%);
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        &-el {
+            padding: 3.5px 0;
+            border-bottom: 1px solid #ffffff;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: calc(17.6 / 16 * 100%);
+            color: #ffffff;
+
+            &::placeholder {
+                color: rgba(65, 68, 81, 1);
+            }
+        }
+    }
+}
