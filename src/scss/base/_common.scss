@@ -95,3 +95,14 @@
 .form-submit {
     padding: 7.5px 44.5px;
 }
+
+// LOGO
+
+.logo {
+    height: fit-content;
+}
+
+.logo img {
+    max-width: 100%;
+    object-fit: contain;
+}
