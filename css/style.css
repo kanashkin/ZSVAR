@@ -278,10 +278,34 @@ span {
 
 .circle {
 	position: absolute;
+	z-index: -1;
 	width: 618px;
 	height: 618px;
 	background: #C30000;
 	filter: blur(200px);
+}
+
+.breadcrumbs {
+	margin-bottom: 12px;
+}
+
+.breadcrumbs__list {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.breadcrumbs__list-item {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 110%;
+	color: #A5A5A5;
+}
+
+.breadcrumbs__list-point {
+	width: 2px;
+	height: 2px;
+	background: #A5A5A5;
 }
 
 .header {
