@@ -98,8 +98,28 @@ function promoSlider() {
 
     if (sliderEl) {
         const slides = document.querySelectorAll('.promo-slide')
+        let counter = 0
         const prevBtn = document.querySelector('.promo-slider__prev')
-        const nextBtn = document.querySelector('.promo-slider__prev')
+        const nextBtn = document.querySelector('.promo-slider__next')
+        const htmlCounterCurrent = document.querySelector('.slides__counter-current')
+        const htmlCounterTotal = document.querySelector('.slides__counter-total')
+        const slidesNameEl = document.querySelector('.promo-product__name')
+        const slidesNames = ['evospark', 'zsvar']
+
+        function changeSlidesName(i) {
+            slidesNameEl.textContent = slidesNames[i]
+        }
+
+        function changeHtmlCounter(i) {
+            i++
+            let currentValue = i ? (i < 10 ? `0${i}` : i) : '0'
+            htmlCounterCurrent.textContent = currentValue
+        }
+
+        function initHtmlCounter() {
+            let totalValue = slides.length ? (slides.length < 10 ? `0${slides.length}` : slides.length) : "0";
+            htmlCounterTotal.textContent = totalValue
+        }
 
         function changeSlide(i) {
             slides.forEach(function(slide) {
@@ -108,11 +128,39 @@ function promoSlider() {
 
             slides[i].classList.add('active')
         }
+
+        nextBtn.addEventListener('click', function () {
+            if (counter == slides.length - 1) {
+                counter = 0
+            } else {
+                counter++
+            }
+
+            changeSlide(counter)
+            changeHtmlCounter(counter)
+            changeSlidesName(counter)
+        })
+
+        prevBtn.addEventListener('click', function() {
+            if (counter == 0) {
+                counter = slides.length - 1
+            } else {
+                counter--
+            }
+
+            changeSlide(counter)
+            changeHtmlCounter(counter)
+            changeSlidesName(counter)
+        })
+
+        changeSlide(counter)
+        initHtmlCounter()
+        changeSlidesName(counter)
     }
 }
 
 window.addEventListener('DOMContentLoaded', function() {
     popularTabs()
     phoneMask()
-    promoSwiper()
+    promoSlider()
 })
