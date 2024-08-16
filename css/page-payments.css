@@ -1,0 +1,37 @@
+.payments {
+	padding: 185px 0 145px;
+	position: relative;
+	overflow: hidden;
+}
+
+.payments__title {
+	margin-bottom: 36px;
+}
+
+.payments__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.payments__content {
+	max-width: 527px;
+}
+
+.payments .circle:nth-child(1) {
+	top: 83px;
+	right: calc(100% - 20px);
+}
+
+.payments .circle:nth-child(2) {
+	bottom: -200px;
+	left: calc(100% - 20px);
+}
+
+.payments .contact__wrapper {
+	flex-direction: column;
+	gap: 32px;
+}
+
+.payments .contact__data {
+	align-items: center;
+}

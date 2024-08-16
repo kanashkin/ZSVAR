@@ -315,6 +315,12 @@ span {
 	line-height: 110%;
 }
 
+.content__items {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
 .content__title {
 	font-size: 24px;
 	font-weight: 700;
@@ -330,7 +336,7 @@ span {
 }
 
 .content ul {
-	margin-left: 10px;
+	margin-left: 15px;
 }
 
 .content li {
@@ -410,6 +416,7 @@ span {
 	pointer-events: none;
 	opacity: 0;
 	transition: 0.4s all;
+	z-index: 5;
 }
 
 .header__submenu-wrapper {
@@ -669,8 +676,7 @@ span {
 	border: 1px solid transparent;
 	border-image-source: linear-gradient(154.04deg, rgba(124, 139, 196, 0.4) 0%, rgba(124, 139, 195, 0) 100%);
 	border-image-slice: 1;
-	max-width: 636px;
-	width: 100%;
+	width: 636px;
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
@@ -703,6 +709,8 @@ span {
 	font-weight: 700;
 	line-height: 110%;
 	color: #ffffff;
+	display: flex;
+	flex-direction: column;
 }
 
 .contact__phone {
