@@ -118,3 +118,13 @@
     max-width: 100%;
     object-fit: contain;
 }
+
+// CIRCLES
+
+.circle {
+    position: absolute;
+    width: 618px;
+    height: 618px;
+    background: $red-color;
+    filter: blur(200px);
+}

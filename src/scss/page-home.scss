@@ -358,6 +358,21 @@
     }
 }
 
+.advantages {
+    position: relative;
+    overflow: hidden;
+}
+
+.advantages .circle:nth-child(1) {
+    right: 100%;
+    top: -27px;
+}
+
+.advantages .circle:nth-child(2) {
+    left: 100%;
+    bottom: 3px;
+}
+
 // CATALOG
 
 .catalog {
@@ -415,6 +430,22 @@
     }
 }
 
+.catalog {
+    position: relative;
+    overflow: hidden;
+}
+
+.catalog .circle:nth-child(1) {
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.catalog .circle:nth-child(2) {
+    left: 100%;
+    bottom: 20%;
+}
+
 // ABOUT
 
 .about {
@@ -464,4 +495,18 @@
             color: #ffffff;
         }
     }
+}
+
+// CONTACT
+
+.contact {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 80px;
+}
+
+.contact .circle {
+    right: 100%;
+    bottom: -300px;
 }
