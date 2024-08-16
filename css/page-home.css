@@ -350,6 +350,21 @@
 	bottom: 0;
 }
 
+.advantages {
+	position: relative;
+	overflow: hidden;
+}
+
+.advantages .circle:nth-child(1) {
+	right: 100%;
+	top: -27px;
+}
+
+.advantages .circle:nth-child(2) {
+	left: 100%;
+	bottom: 3px;
+}
+
 .catalog {
 	margin-bottom: 91px;
 }
@@ -405,6 +420,22 @@
 	color: #ffffff;
 }
 
+.catalog {
+	position: relative;
+	overflow: hidden;
+}
+
+.catalog .circle:nth-child(1) {
+	right: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.catalog .circle:nth-child(2) {
+	left: 100%;
+	bottom: 20%;
+}
+
 .about {
 	margin-bottom: 91px;
 }
@@ -452,4 +483,16 @@
 	line-height: 110%;
 	margin-bottom: 20px;
 	color: #ffffff;
+}
+
+.contact {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 0;
+	padding-bottom: 80px;
+}
+
+.contact .circle {
+	right: 100%;
+	bottom: -300px;
 }

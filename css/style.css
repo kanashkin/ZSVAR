@@ -276,6 +276,14 @@ span {
 	object-fit: contain;
 }
 
+.circle {
+	position: absolute;
+	width: 618px;
+	height: 618px;
+	background: #C30000;
+	filter: blur(200px);
+}
+
 .header {
 	width: 100%;
 	position: absolute;
