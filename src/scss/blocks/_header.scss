@@ -65,6 +65,7 @@
         pointer-events: none;
         opacity: 0;
         transition: .4s all;
+        z-index: 5;
 
         &-wrapper {
             border: 1px solid #FFFFFF33;

@@ -262,7 +262,7 @@
 // ADVANTAGES
 
 .advantages {
-    margin-bottom: 96px;
+    padding-bottom: 96px;
     padding-top: 111px;
     position: relative;
 
@@ -364,13 +364,13 @@
 }
 
 .advantages .circle:nth-child(1) {
-    right: 100%;
-    top: -27px;
+    right: 105%;
+    top: 25%;
 }
 
 .advantages .circle:nth-child(2) {
-    left: 100%;
-    bottom: 3px;
+    left: 105%;
+    bottom: 25%;
 }
 
 // CATALOG

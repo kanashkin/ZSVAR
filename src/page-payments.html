@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"css_link":"css/page-payments.css"
+})
+
+<body>
+	@@include('html/header.html')
+
+    <main>
+        <section class="payments">
+            <div class="container">
+                <nav class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__list-item">
+                            <a href="/">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__list-point"></li>
+                        <li class="breadcrumbs__list-item">
+                            <a>Оплата и доставка</a>
+                        </li>
+                    </ul>
+                </nav>
+                <h1 class="title payments__title">Оплата и доставка</h1>
+                
+                <div class="payments__wrapper">
+                    <div class="payments__content">
+                        <div class="content__items">
+                            <div class="content">
+                                <h2 class="content__title">Главное</h2>
+                                <div class="content__wrap">
+                                    <p>
+                                        Доставляем сварочные материалы в любой регион России. Работаем только с юридическими лицами. У нас собственная логистика и транспортные компании по всей стране.
+                                    </p>
+                                    <p>
+                                        Мы придерживаемся индивидуального подхода к каждому клиенту. Для постоянных клиентов доступен платеж с отсрочкой.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h2 class="content__title">Доставка</h2>
+                                <div class="content__wrap">
+                                    <ul>
+                                        <li>По Москве (в пределах МКАД) – от 400 р.</li>
+                                        <li>По Московской области – от 450 р.</li>
+                                        <li>В Санкт-Петербург – от 500 р.</li>
+                                        <li>В другие города России – от 550 р.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h2 class="content__title">Стоимость <br> доставки</h2>
+                                <div class="content__wrap">
+                                    <p>
+                                        Цена доставки определяется индивидуально и зависит от веса, габаритов отправления и расстояния до получателя.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h2 class="content__title">Как оформить <br> заказ?</h2>
+                                <div class="content__wrap">
+                                    <p>
+                                        Заказ можно оформить через специальную форму на нашем сайте. Выберите нужный товар в каталоге, заполните необходимые поля
+                                        и подтвердите заказ. Если у вас возникнут вопросы, обратитесь
+                                        к нашим менеджерам.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__wrapper">
+                        <form class="contact__form">
+                            <p class="contact__form-descr contact__form-text">
+                                Заполните форму, мы свяжемся <br>
+                                и обсудим дату и время демонстрации
+                            </p>
+                            <div class="contact__form-inputs">
+                                <input class="contact__form-input contact__form-text" type="text" placeholder="ФИО" required maxlength="70">
+                                <input id="phone" class="contact__form-input contact__form-text" type="tel" placeholder="(999) 999-99-99" required>
+                            </div>
+                            <div class="contact__form-footer form-footer">
+                                <div class="form-accept">
+                                    <input class="form-accept__input" type="checkbox" required>
+                                    <p class="form-accept__text">
+                                        Я согласен(на) на обработку персональных данных
+                                    </p>
+                                </div>
+                                <button type="submit" class="red-btn form-submit">Написать</button>
+                            </div>
+                        </form>
+                        <div class="contact__data">
+                            <a class="contact__phone" href="tel:+7 (495) 646-16-66">+7 (495) 646-16-66</a>
+                            <a class="contact__email" href="mailto:info@zlatosvar.ru">info@zlatosvar.ru</a>
+                            <p class="contact__address">г. Москва, Литовский Бульвар, 22с3</p>
+                        </div>
+				    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </section>
+
+        @@include('html/map.html')
+    </main>
+
+    @@include('html/footer.html')
+
+	<script src="js/app.js"></script>
+</body>
+
+</html>

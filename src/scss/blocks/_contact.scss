@@ -19,8 +19,7 @@
         border: 1px solid transparent;
         border-image-source: linear-gradient(154.04deg, rgba(124, 139, 196, 0.4) 0%, rgba(124, 139, 195, 0) 100%);
         border-image-slice: 1;
-        max-width: 636px;
-        width: 100%;
+        width: 636px;
 
         display: flex;
         flex-direction: column;
@@ -54,6 +53,8 @@
         font-weight: 700;
         line-height: calc(44 / 40 * 100%);
         color: #ffffff;
+        display: flex;
+        flex-direction: column;
     }
 
     &__phone {
