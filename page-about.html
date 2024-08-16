@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/page-contacts.css">
+	<link rel="stylesheet" href="css/page-about.css">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
@@ -73,50 +73,64 @@
 	</header>
 
 	<main>
-		<section class="contacts">
+		<section class="about">
+			<img class="banner" src="img/page-about/about/banner.png" alt="">
 			<div class="container">
-				<nav class="breadcrumbs">
-					<ul class="breadcrumbs__list">
-						<li class="breadcrumbs__list-item">
-							<a href="/">Главная</a>
+				<div class="about__content">
+					<nav class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__list-item">
+								<a href="/">Главная</a>
+							</li>
+							<li class="breadcrumbs__list-point"></li>
+							<li class="breadcrumbs__list-item">
+								<a>Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<h1 class="title about__title">О компании</h1>
+					<div class="content">
+						<h2 class="content__title">Главное</h2>
+						<div class="content__wrap">
+							<p>
+								Наша компания – ведущий поставщик сварочных материалов и оборудования
+								от лучших мировых производителей.
+							</p>
+							<p>
+								Мы специализируемся на работе исключительно с юридическими лицами. Каждый день обеспечиваем
+								высокий уровень качества и надежности всей продукции.
+							</p>
+						</div>
+					</div>
+					<ul class="about__documents documents">
+						<li class="document">
+							<img class="document__icon" src="img/icons/pdf.svg" alt="">
+							<h2 class="document__name">
+								СЕРТИФИКАТ КАЧЕСТВА №1160 партия 2222033 26.05 d270 1.2
+							</h2>
+							<span class="document__weight">Размер: 279.4 Кб</span>
+							<a class="red-btn document__download" href="" download="">Скачать</a>
 						</li>
-						<li class="breadcrumbs__list-point"></li>
-						<li class="breadcrumbs__list-item">
-							<a>Контакты</a>
+						<li class="document">
+							<img class="document__icon" src="img/icons/pdf.svg" alt="">
+							<h2 class="document__name">
+								ПЭLB52U диам 2,6 и 3,2
+							</h2>
+							<span class="document__weight">Размер: 375.5 Кб</span>
+							<a class="red-btn document__download" href="" download="">Скачать</a>
+						</li>
+						<li class="document">
+							<img class="document__icon" src="img/icons/pdf.svg" alt="">
+							<h2 class="document__name">
+								НАКС на проволоку 1,2 мм
+							</h2>
+							<span class="document__weight">Размер: 297.6 Кб</span>
+							<a class="red-btn document__download" href="" download="">Скачать</a>
 						</li>
 					</ul>
-				</nav>
-				<h1 class="title">Контакты</h1>
-				<ul class="contacts__items">
-					<li class="contacts__item">
-						<h2 class="contacts__item-title">Email</h2>
-						<a class="contacts__item-date" href="mailto:info@zlatosvar.ru">info@zlatosvar.ru</a>
-					</li>
-					<li class="contacts__item">
-						<h2 class="contacts__item-title">Телефон</h2>
-						<a class="contacts__item-date" href="tel:+7 (495) 646-16-66">+7 (495) 646-16-66</a>
-					</li>
-					<li class="contacts__item">
-						<h2 class="contacts__item-title">Режим работы</h2>
-						<p class="contacts__item-date">Пн. – Пт.: с 9:00 до 18:00</p>
-					</li>
-					<ul class="contacts__items-list">
-						<li class="contacts__item">
-							<h2 class="contacts__item-title">Офис</h2>
-							<p class="contacts__item-date">г. Москва, Литовский Бульвар, 22с3</p>
-						</li>
-						<li class="contacts__item">
-							<h2 class="contacts__item-title">Склад</h2>
-							<p class="contacts__item-date">г. Москва, Литовский Бульвар, 22с1</p>
-						</li>
-					</ul>
-				</ul>
+				</div>
 			</div>
-
-			<div>
-				<div class="circle"></div>
-				<div class="circle"></div>
-			</div>
+			<div class="circle"></div>
 		</section>
 
 		<section class="map">

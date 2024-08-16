@@ -61,36 +61,38 @@ function popularSwiper(i) {
 function phoneMask() {
 	const input = document.querySelector('#phone')
 
-	let iti = window.intlTelInput(input, {
-		initialCountry: 'ru',
-		separateDialCode: true,
-		preferredCountries: ['ru'],
-	})
+	if (input) {
+        let iti = window.intlTelInput(input, {
+            initialCountry: 'ru',
+            separateDialCode: true,
+            preferredCountries: ['ru'],
+        })
 
-	$(document).ready(function () {
-		$('#phone').inputmask('(999) 999-99-99', {
-			clearIncomplete: true,
-		})
-	})
+        $(document).ready(function () {
+            $('#phone').inputmask('(999) 999-99-99', {
+                clearIncomplete: true,
+            })
+        })
 
-	input.addEventListener('countrychange', function () {
-		let countryCode = iti.getSelectedCountryData().iso2
-		let mask = ''
+        input.addEventListener('countrychange', function () {
+            let countryCode = iti.getSelectedCountryData().iso2
+            let mask = ''
 
-		if (countryCode === 'ru') {
-			mask = '(999) 999-99-99'
-		} else if (countryCode === 'us') {
-			mask = '(999) 999-9999'
-		} else {
-			mask = '(999) 999 9999'
-		}
+            if (countryCode === 'ru') {
+                mask = '(999) 999-99-99'
+            } else if (countryCode === 'us') {
+                mask = '(999) 999-9999'
+            } else {
+                mask = '(999) 999 9999'
+            }
 
-		$(input).inputmask('remove')
-		$(input).inputmask({
-			mask: mask,
-			clearIncomplete: true,
-		})
-	})
+            $(input).inputmask('remove')
+            $(input).inputmask({
+                mask: mask,
+                clearIncomplete: true,
+            })
+        })
+    }
 }
 
 function promoSlider() {
