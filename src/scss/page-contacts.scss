@@ -1,0 +1,44 @@
+.contacts {
+    padding: 185px 0 150px;
+
+    &__items {
+        margin-top: 108px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+
+    &__item {
+
+        &-title {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: calc(31 / 24 * 100%);
+            color: #ffffff;
+        }
+
+        &-date {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: calc(17.6 / 16 * 100%);
+            color: #A5A5A5;
+        }
+    }
+}
+
+.contacts .circle {
+    top: 0;
+}
+
+.contacts .circle:nth-child(1) {
+    right: calc(100% - 20px);
+}
+
+.contacts .circle:nth-child(2) {
+    left: calc(100% - 20px);
+}

@@ -123,8 +123,34 @@
 
 .circle {
     position: absolute;
+    z-index: -1;
     width: 618px;
     height: 618px;
     background: $red-color;
     filter: blur(200px);
+}
+
+// BREADCRUMBS
+
+.breadcrumbs {
+    margin-bottom: 12px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        &-item {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: calc(13.2 / 12 * 100%);
+            color: #A5A5A5;
+        }
+
+        &-point {
+            width: 2px;
+            height: 2px;
+            background: #A5A5A5;
+        }
+    }
 }
