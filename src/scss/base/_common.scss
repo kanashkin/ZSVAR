@@ -154,3 +154,37 @@
         }
     }
 }
+
+// TEXT
+
+.content {
+    color: #A5A5A5;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: calc(17.6 / 16 * 100%);
+    
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 31.2px;
+        color: #ffffff;
+        margin-bottom: 12px;
+    }
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    ul {
+        margin-left: 10px;
+    }
+
+    li {
+        list-style: disc;
+    }
+
+    .white,
+    strong {
+        color: #ffffff;
+    }
+}
