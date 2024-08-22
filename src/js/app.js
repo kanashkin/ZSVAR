@@ -161,8 +161,33 @@ function promoSlider() {
     }
 }
 
+function catalogCollapse() {
+    const categoriesItems = document.querySelectorAll('.catalog__nav-main')
+
+    if (categoriesItems.length) {
+        categoriesItems.forEach(function(category) {
+            category.addEventListener('click', function() {
+                this.classList.toggle('active')
+                const subCategories = this.nextElementSibling
+
+                if (subCategories) {
+                    if (this.classList.contains('active')) {
+                        subCategories.classList.add('active')
+                        subCategories.style.height = subCategories.scrollHeight + 'px'
+                    } else {
+                        subCategories.classList.remove('active')
+                        subCategories.style.height = ''
+                    }
+                }
+
+            })
+        })
+    }
+}
+
 window.addEventListener('DOMContentLoaded', function() {
     popularTabs()
     phoneMask()
     promoSlider()
+    catalogCollapse()
 })

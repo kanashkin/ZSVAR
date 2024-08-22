@@ -1,0 +1,32 @@
+// CATALOG
+
+.catalog {
+    padding: 185px 0 424px;
+    position: relative;
+
+    &__title {
+        margin-bottom: 107px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .circle:nth-child(1) {
+        top: 83px;
+        right: 100%;
+    }
+
+    .circle:nth-child(2) {
+        bottom: 448px;
+        left: 104%;
+    }
+}
