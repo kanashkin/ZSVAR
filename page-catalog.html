@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/page-about.css">
+	<link rel="stylesheet" href="css/page-catalog.css">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
@@ -73,64 +73,163 @@
 	</header>
 
 	<main>
-		<section class="about">
-			<img class="banner" src="img/page-about/about/banner.png" alt="">
+		<section class="catalog">
 			<div class="container">
-				<div class="about__content">
-					<nav class="breadcrumbs">
-						<ul class="breadcrumbs__list">
-							<li class="breadcrumbs__list-item">
-								<a href="/">Главная</a>
-							</li>
-							<li class="breadcrumbs__list-point"></li>
-							<li class="breadcrumbs__list-item">
-								<a>О компании</a>
-							</li>
-						</ul>
-					</nav>
-					<h1 class="title about__title">О компании</h1>
-					<div class="content">
-						<h2 class="content__title">Главное</h2>
-						<div class="content__wrap">
-							<p>
-								Наша компания – ведущий поставщик сварочных материалов и оборудования
-								от лучших мировых производителей.
-							</p>
-							<p>
-								Мы специализируемся на работе исключительно с юридическими лицами. Каждый день обеспечиваем
-								высокий уровень качества и надежности всей продукции.
-							</p>
-						</div>
-					</div>
-					<ul class="about__documents documents">
-						<li class="document">
-							<img class="document__icon" src="img/icons/pdf.svg" alt="">
-							<h2 class="document__name">
-								СЕРТИФИКАТ КАЧЕСТВА №1160 партия 2222033 26.05 d270 1.2
-							</h2>
-							<span class="document__weight">Размер: 279.4 Кб</span>
-							<a class="red-btn document__download" href="" download="">Скачать</a>
+				<nav class="breadcrumbs">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__list-item">
+							<a href="/">Главная</a>
 						</li>
-						<li class="document">
-							<img class="document__icon" src="img/icons/pdf.svg" alt="">
-							<h2 class="document__name">
-								ПЭLB52U диам 2,6 и 3,2
-							</h2>
-							<span class="document__weight">Размер: 375.5 Кб</span>
-							<a class="red-btn document__download" href="" download="">Скачать</a>
-						</li>
-						<li class="document">
-							<img class="document__icon" src="img/icons/pdf.svg" alt="">
-							<h2 class="document__name">
-								НАКС на проволоку 1,2 мм
-							</h2>
-							<span class="document__weight">Размер: 297.6 Кб</span>
-							<a class="red-btn document__download" href="" download="">Скачать</a>
+						<li class="breadcrumbs__list-point"></li>
+						<li class="breadcrumbs__list-item">
+							<a>Продукция</a>
 						</li>
 					</ul>
+				</nav>
+				<h1 class="catalog__title title">Продукция</h1>
+
+				<div class="catalog__wrapper">
+					<ul class="catalog__nav">
+						<ul class="catalog__nav-items">
+							<li class="catalog__nav-item">
+								<div class="catalog__nav-main icon-el" href="">Популярные товары</div>
+							</li>
+							<li class="catalog__nav-item">
+								<div class="catalog__nav-main icon-el" href="">Сварочная проволока</div>
+								<ul class="catalog__nav-sub-list">
+									<li class="catalog__nav-sub">
+										<a href="">Сварочная проволока омедненная TOP WELD</a>
+									</li>
+									<li class="catalog__nav-sub">
+										<a href="">Сварочная проволока омедненная стальная HENDER / BIZON</a>
+									</li>
+									<li class="catalog__nav-sub">
+										<a href="">Проволока сплошного сечения ALFA GLOBAL</a>
+									</li>
+									<li class="catalog__nav-sub">
+										<a href="">Проволока для SAW сварки ALFA GLOBAL</a>
+									</li>
+									<li class="catalog__nav-sub">
+										<a href="">Сварочные прутки сплошного сечения ALFA GLOBAL</a>
+									</li>
+								</ul>
+							</li>
+							<li class="catalog__nav-item">
+								<div class="catalog__nav-main icon-el" href="">Сварочное оборудование</div>
+							</li>
+							<li class="catalog__nav-item">
+								<div class="catalog__nav-main icon-el" href="">Сварочные горелки</div>
+							</li>
+							<li class="catalog__nav-item">
+								<div class="catalog__nav-main icon-el" href="">Сварочная химия</div>
+							</li>
+							<li class="catalog__nav-item">
+								<div class="catalog__nav-main icon-el" href="">Абразивные материалы</div>
+							</li>
+							<li class="catalog__nav-item">
+								<div class="catalog__nav-main icon-el" href="">Расходные материалы</div>
+							</li>
+						</ul>
+					</ul>
+					<div class="catalog__items">
+						<article class="product-card">
+							<img class="product-card__photo" src="img/products/01.png" alt="">
+							<h3 class="product-card__title">Горелка MIG MP 26 5м DME2605</h3>
+							<span class="product-card__stock active">В наличии</span>
+							<span class="product-card__price">14 295 руб.</span>
+							<div class="product-card__actions">
+								<a class="product-card__link red-btn" href="">Подробнее</a>
+								<button class="product-card__action" data-action="plus">
+									<i class="_icon-plus"></i>
+								</button>
+								<button class="product-card__action" data-action="minus">
+									<i class="_icon-minus"></i>
+								</button>
+							</div>
+						</article>
+						<article class="product-card">
+							<img class="product-card__photo" src="img/products/01.png" alt="">
+							<h3 class="product-card__title">Горелка MIG MP 26 5м DME2605</h3>
+							<span class="product-card__stock active">В наличии</span>
+							<span class="product-card__price">14 295 руб.</span>
+							<div class="product-card__actions">
+								<a class="product-card__link red-btn" href="">Подробнее</a>
+								<button class="product-card__action" data-action="plus">
+									<i class="_icon-plus"></i>
+								</button>
+								<button class="product-card__action" data-action="minus">
+									<i class="_icon-minus"></i>
+								</button>
+							</div>
+						</article>
+						<article class="product-card">
+							<img class="product-card__photo" src="img/products/01.png" alt="">
+							<h3 class="product-card__title">Горелка MIG MP 26 5м DME2605</h3>
+							<span class="product-card__stock active">В наличии</span>
+							<span class="product-card__price">14 295 руб.</span>
+							<div class="product-card__actions">
+								<a class="product-card__link red-btn" href="">Подробнее</a>
+								<button class="product-card__action" data-action="plus">
+									<i class="_icon-plus"></i>
+								</button>
+								<button class="product-card__action" data-action="minus">
+									<i class="_icon-minus"></i>
+								</button>
+							</div>
+						</article>
+						<article class="product-card">
+							<img class="product-card__photo" src="img/products/01.png" alt="">
+							<h3 class="product-card__title">Горелка MIG MP 26 5м DME2605</h3>
+							<span class="product-card__stock active">В наличии</span>
+							<span class="product-card__price">14 295 руб.</span>
+							<div class="product-card__actions">
+								<a class="product-card__link red-btn" href="">Подробнее</a>
+								<button class="product-card__action" data-action="plus">
+									<i class="_icon-plus"></i>
+								</button>
+								<button class="product-card__action" data-action="minus">
+									<i class="_icon-minus"></i>
+								</button>
+							</div>
+						</article>
+						<article class="product-card">
+							<img class="product-card__photo" src="img/products/01.png" alt="">
+							<h3 class="product-card__title">Горелка MIG MP 26 5м DME2605</h3>
+							<span class="product-card__stock active">В наличии</span>
+							<span class="product-card__price">14 295 руб.</span>
+							<div class="product-card__actions">
+								<a class="product-card__link red-btn" href="">Подробнее</a>
+								<button class="product-card__action" data-action="plus">
+									<i class="_icon-plus"></i>
+								</button>
+								<button class="product-card__action" data-action="minus">
+									<i class="_icon-minus"></i>
+								</button>
+							</div>
+						</article>
+						<article class="product-card">
+							<img class="product-card__photo" src="img/products/01.png" alt="">
+							<h3 class="product-card__title">Горелка MIG MP 26 5м DME2605</h3>
+							<span class="product-card__stock active">В наличии</span>
+							<span class="product-card__price">14 295 руб.</span>
+							<div class="product-card__actions">
+								<a class="product-card__link red-btn" href="">Подробнее</a>
+								<button class="product-card__action" data-action="plus">
+									<i class="_icon-plus"></i>
+								</button>
+								<button class="product-card__action" data-action="minus">
+									<i class="_icon-minus"></i>
+								</button>
+							</div>
+						</article>
+					</div>
 				</div>
 			</div>
-			<div class="circle"></div>
+
+			<div>
+				<div class="circle"></div>
+				<div class="circle"></div>
+			</div>
 		</section>
 
 		<section class="map">
@@ -272,5 +371,3 @@
 
 	<script src="js/app.js"></script>
 </body>
-
-</html>

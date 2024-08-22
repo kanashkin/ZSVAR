@@ -1,0 +1,30 @@
+.catalog {
+	padding: 185px 0 424px;
+	position: relative;
+}
+
+.catalog__title {
+	margin-bottom: 107px;
+}
+
+.catalog__wrapper {
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+.catalog__items {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 8px;
+}
+
+.catalog .circle:nth-child(1) {
+	top: 83px;
+	right: 100%;
+}
+
+.catalog .circle:nth-child(2) {
+	bottom: 448px;
+	left: 104%;
+}

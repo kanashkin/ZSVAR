@@ -102,7 +102,9 @@ span {
 }
 
 [class^=_icon-],
-[class*=" _icon-"] {
+[class*=" _icon-"],
+.icon-el::after,
+.icon-el::before {
 	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: "icomoon" !important;
 	speak: never;
@@ -793,4 +795,187 @@ span {
 
 .map__input-el::placeholder {
 	color: rgb(65, 68, 81);
+}
+
+@font-face {
+	font-family: "Gilroy";
+	font-display: swap;
+	src: url("../fonts/Gilroy-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "NTSomic";
+	font-display: swap;
+	src: url("../fonts/NTSomic-Semibold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "NTSomic";
+	font-display: swap;
+	src: url("../fonts/NTSomic-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "NTSomic";
+	font-display: swap;
+	src: url("../fonts/NTSomic-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "NTSomic";
+	font-display: swap;
+	src: url("../fonts/NTSomic-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "icomoon";
+	src: url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^=_icon-],
+[class*=" _icon-"],
+.icon-el::after,
+.icon-el::before {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "icomoon" !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+._icon-arrow-left:before {
+	content: "\e900";
+	color: #fff;
+}
+
+._icon-arrow-right:before {
+	content: "\e901";
+	color: #fff;
+}
+
+._icon-burger:before {
+	content: "\e902";
+	color: #fff;
+}
+
+._icon-cart:before {
+	content: "\e903";
+	color: #fff;
+}
+
+._icon-menu-arrow:before {
+	content: "\e904";
+	color: #fff;
+}
+
+._icon-menu-catalog:before {
+	content: "\e905";
+	color: #fff;
+}
+
+._icon-minus:before {
+	content: "\e906";
+	color: #fff;
+}
+
+._icon-play:before {
+	content: "\e907";
+	color: #fff;
+}
+
+._icon-plus:before {
+	content: "\e908";
+	color: #fff;
+}
+
+._icon-search:before {
+	content: "\e909";
+	color: #fff;
+}
+
+.catalog__nav {
+	width: 314px;
+}
+
+.catalog__nav a {
+	width: 100%;
+}
+
+.catalog__nav-items {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.catalog__nav-main {
+	padding: 16px;
+	color: #A5A5A5;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 111.1111111111%;
+	background: #080B15;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	transition: 0.4s all;
+}
+
+.catalog__nav-main.active {
+	color: #ffffff;
+	background: #C30000;
+}
+
+.catalog__nav-main::after {
+	content: "\e908";
+	font-size: 12px;
+	color: #C30000;
+	transition: 0.4s all;
+}
+
+.catalog__nav-main.active::after {
+	color: #ffffff;
+}
+
+.catalog__nav-sub-list {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	height: 0px;
+	opacity: 0;
+	transition: 0.4s all;
+	pointer-events: none;
+}
+
+.catalog__nav-sub-list.active {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.catalog__nav-sub {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 110%;
+	color: #636363;
+	background: #0D101B;
+	padding: 11px 32px;
 }
