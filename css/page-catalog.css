@@ -1,6 +1,7 @@
 .catalog {
 	padding: 185px 0 424px;
 	position: relative;
+	overflow: hidden;
 }
 
 .catalog__title {

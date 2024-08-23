@@ -1,0 +1,164 @@
+.product {
+	padding: 185px 0 310px;
+	position: relative;
+	overflow: hidden;
+}
+
+.product .circle:nth-child(1) {
+	top: 295px;
+	left: 104%;
+}
+
+.product .circle:nth-child(2) {
+	top: 35%;
+	right: 105%;
+}
+
+.product .circle:nth-child(3) {
+	bottom: -70px;
+	left: 105%;
+}
+
+.product__title {
+	margin-bottom: 100px;
+}
+
+.product__wrapper {
+	display: flex;
+	gap: 8px;
+}
+
+.product__content {
+	max-width: calc(100% - 322px);
+}
+
+.product__main {
+	display: flex;
+	gap: 115px;
+	margin-bottom: 50px;
+}
+
+.product__photo-wrap {
+	width: 422px;
+	height: 452px;
+	padding: 39px 25px;
+	background: rgba(37, 45, 80, 0.6);
+	border: 1px solid transparent;
+	border-image-source: linear-gradient(154.04deg, rgba(124, 139, 196, 0.4) 0%, rgba(124, 139, 195, 0) 100%);
+	border-image-slice: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.product__photo-wrap img {
+	width: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+
+.product__stock {
+	margin-bottom: 12px;
+}
+
+.product__price {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 129.1666666667%;
+	color: #ffffff;
+	margin-bottom: 24px;
+}
+
+.product__actions-btns {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.product__action-btn {
+	padding: 9px 35.5px;
+	width: 100%;
+	border-width: 1px;
+}
+
+.product__descr {
+	max-width: 636px;
+	margin-bottom: 48px;
+}
+
+.product__descr-content {
+	margin-bottom: 24px;
+}
+
+.product__standarts {
+	margin-bottom: 48px;
+}
+
+.product__standarts-title {
+	margin-bottom: 24px;
+}
+
+.product__similar {
+	margin-bottom: 100px;
+}
+
+.product__similar-title {
+	margin-bottom: 24px;
+}
+
+.product__seo {
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+
+.product__seo ul {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.product__seo li::before {
+	background: #ffffff;
+}
+
+.characters__items {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.characters__item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.characters__item-name {
+	width: 207px;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 100%;
+	color: #ffffff;
+}
+
+.characters__item-value {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 110%;
+	color: rgb(165, 165, 165);
+}
+
+.similar-swiper__wrapper {
+	position: relative;
+	max-width: 100%;
+}
+
+.similar-swiper__nav {
+	position: absolute;
+	right: 0;
+	bottom: calc(100% + 30px);
+}

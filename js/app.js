@@ -58,6 +58,23 @@ function popularSwiper(i) {
     })
 }
 
+function similarSwiper() {
+    const swiperEl = document.querySelector('.similar-swiper')
+
+    if (swiperEl) {
+        new Swiper(swiperEl, {
+            slidesPerView: 3,
+            loop: true,
+            speed: 600,
+            spaceBetween: 8,
+            navigation: {
+                prevEl: '.similar-swiper__prev',
+                nextEl: '.similar-swiper__next'
+            }
+        })
+    }
+}
+
 function phoneMask() {
 	const input = document.querySelector('#phone')
 
@@ -190,4 +207,5 @@ window.addEventListener('DOMContentLoaded', function() {
     phoneMask()
     promoSlider()
     catalogCollapse()
+    similarSwiper()
 })

@@ -176,6 +176,7 @@ span {
 	color: #ffffff;
 	border-style: solid;
 	border-color: #C30000;
+	border-width: 0;
 }
 
 .transparent-btn {
@@ -186,6 +187,10 @@ span {
 	color: #ffffff;
 	border-style: solid;
 	border-color: #ffffff;
+}
+
+.transparent-btn.red {
+	border-color: #C30000;
 }
 
 .swiper__nav {
@@ -337,12 +342,20 @@ span {
 	gap: 24px;
 }
 
-.content ul {
-	margin-left: 15px;
+.content li {
+	position: relative;
+	padding-left: 15px;
 }
 
-.content li {
-	list-style: disc;
+.content li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 7px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: #A5A5A5;
 }
 
 .content .white,
@@ -597,6 +610,7 @@ span {
 }
 
 .product-card__stock {
+	display: block;
 	font-size: 12px;
 	font-weight: 600;
 	line-height: 130%;
