@@ -8,6 +8,7 @@
     color: #ffffff;
     border-style: solid;
     border-color: $red-color;
+    border-width: 0;
 }
 
 .transparent-btn {
@@ -18,6 +19,10 @@
     color: #ffffff;
     border-style: solid;
     border-color: #ffffff;
+}
+
+.transparent-btn.red {
+    border-color: $red-color;
 }
 
 .swiper__nav {
@@ -181,12 +186,21 @@
         flex-direction: column;
         gap: 24px;
     }
-    ul {
-        margin-left: 15px;
-    }
-
+    
     li {
-        list-style: disc;
+        position: relative;
+        padding-left: 15px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 7px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #A5A5A5;
+        }
     }
 
     .white,
