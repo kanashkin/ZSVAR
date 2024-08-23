@@ -92,3 +92,11 @@
         }
     }
 }
+
+@media(max-width: 1370px) {
+    .footer {
+        &__navs {
+            margin-left: 28px;
+        }
+    }
+}

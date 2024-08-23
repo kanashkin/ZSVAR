@@ -77,3 +77,15 @@
         width: 100%;
     }
 }
+
+@media(max-width: 1439px) {
+    .about {
+
+        &__content {
+            max-width: 70%;
+        }
+        .banner {
+            display: none;
+        }
+    }
+}

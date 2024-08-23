@@ -37,3 +37,14 @@
         align-items: center;
     }
 }
+
+@media(max-width: 1439px) {
+    .payments {
+        .contact__wrapper {
+            width: 45%;
+        }
+        .contact__form {
+            width: 100%;
+        }
+    }
+}
