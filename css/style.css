@@ -228,6 +228,12 @@ span {
 	color: #ffffff;
 }
 
+@media (max-width: 1279px) {
+	.title {
+		font-size: 28px;
+	}
+}
+
 .form-footer {
 	display: flex;
 	align-items: flex-start;
@@ -486,6 +492,29 @@ span {
 	font-size: 14px;
 }
 
+@media (max-width: 1279px) {
+	.header__wrapper {
+		justify-content: space-between;
+	}
+
+	.header__phone {
+		display: none;
+	}
+
+	.header__nav {
+		padding: 0;
+	}
+
+	.header__nav-list-item>a {
+		padding: 25px 20px;
+	}
+
+	.header__block {
+		gap: 14px;
+		margin: 0;
+	}
+}
+
 .footer {
 	background: rgba(0, 0, 0, 0.95);
 	padding: 100px 0;
@@ -585,9 +614,25 @@ span {
 	}
 }
 
+@media (max-width: 1279px) {
+	.footer__content {
+		justify-content: space-between;
+	}
+
+	.footer__navs {
+		gap: 0;
+		width: 75%;
+		justify-content: space-between;
+	}
+
+	.footer__logo {
+		max-width: 15%;
+	}
+}
+
 .product-card {
+	width: 100%;
 	padding: 36px 20px 18px 20px;
-	width: fit-content;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -749,6 +794,20 @@ span {
 	line-height: 110%;
 }
 
+@media (max-width: 1279px) {
+	.contact__wrapper {
+		gap: 100px;
+	}
+
+	.contact__form {
+		width: 53%;
+	}
+
+	.contact__data {
+		font-size: 36px;
+	}
+}
+
 .iti--separate-dial-code .iti__selected-flag {
 	background: transparent;
 	padding: 17px 0 17px 16px;
@@ -815,6 +874,12 @@ span {
 
 .map__input-el::placeholder {
 	color: rgb(65, 68, 81);
+}
+
+@media (max-width: 1279px) {
+	.map__form {
+		margin: 0 auto;
+	}
 }
 
 @font-face {
