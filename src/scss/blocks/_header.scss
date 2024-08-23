@@ -120,3 +120,25 @@
         }
     }
 }
+
+@media(max-width: 1279px) {
+    .header {
+        &__wrapper {
+            justify-content: space-between;
+        }
+        &__phone {
+            display: none;
+        }
+        &__nav {
+            padding: 0;
+
+            &-list-item>a {
+                padding: 25px 20px;
+            }
+        }
+        &__block {
+            gap: 14px;
+            margin: 0;
+        }
+    }
+}

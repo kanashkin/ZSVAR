@@ -72,6 +72,20 @@
     }
 }
 
+@media(max-width: 1279px) {
+    .contact {
+        &__wrapper {
+            gap: 100px;
+        }
+        &__form {
+            width: 53%;
+        }
+        &__data {
+            font-size: 36px;
+        }
+    }
+}
+
 // STYLES FOR PHONE MASK LIBRARY
 
 .iti--separate-dial-code .iti__selected-flag {

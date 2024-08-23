@@ -100,3 +100,19 @@
         }
     }
 }
+
+@media(max-width: 1279px) {
+    .footer {
+        &__content {
+            justify-content: space-between;
+        }
+        &__navs {
+            gap: 0;
+            width: 75%;
+            justify-content: space-between;
+        }
+        &__logo {
+            max-width: 15%;
+        }
+    }
+}
