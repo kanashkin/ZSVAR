@@ -1,5 +1,7 @@
 .contacts {
 	padding: 185px 0 150px;
+	position: relative;
+	overflow: hidden;
 }
 
 .contacts__items {
@@ -38,4 +40,15 @@
 
 .contacts .circle:nth-child(2) {
 	left: calc(100% - 20px);
+}
+
+@media (max-width: 1279px) {
+	.contacts {
+		padding: 185px 0 120px;
+	}
+
+	.contacts__items {
+		margin-top: 80px;
+		gap: 20px;
+	}
 }

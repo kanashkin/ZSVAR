@@ -68,13 +68,18 @@ function similarSwiper() {
 
     if (swiperEl) {
         new Swiper(swiperEl, {
-            slidesPerView: 3,
+            slidesPerView: 2,
             loop: true,
             speed: 600,
             spaceBetween: 8,
             navigation: {
                 prevEl: '.similar-swiper__prev',
                 nextEl: '.similar-swiper__next'
+            },
+            breakpoints: {
+                1280: {
+                    slidesPerView: 3
+                }
             }
         })
     }

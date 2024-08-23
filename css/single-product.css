@@ -21,6 +21,7 @@
 
 .product__title {
 	margin-bottom: 100px;
+	font-size: 32px !important;
 }
 
 .product__wrapper {
@@ -161,4 +162,33 @@
 	position: absolute;
 	right: 0;
 	bottom: calc(100% + 30px);
+}
+
+@media (max-width: 1279px) {
+	.product {
+		padding: 175px 0 200px;
+	}
+
+	.product__title {
+		margin-bottom: 80px;
+	}
+
+	.product__main {
+		gap: 40px;
+		margin-bottom: 80px;
+	}
+
+	.product__similar {
+		margin-bottom: 80px;
+	}
+
+	.product__seo {
+		gap: 44px;
+	}
+
+	.product__photo-wrap {
+		width: 50%;
+		height: auto;
+		aspect-ratio: 1/1;
+	}
 }

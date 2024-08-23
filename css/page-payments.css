@@ -45,3 +45,28 @@
 		width: 100%;
 	}
 }
+
+@media (max-width: 1279px) {
+	.payments {
+		padding: 175px 0 100px;
+	}
+
+	.payments__content {
+		max-width: 80%;
+	}
+
+	.payments__wrapper {
+		flex-direction: column;
+		gap: 80px;
+	}
+
+	.payments .contact__wrapper {
+		width: 100%;
+		gap: 100px;
+		flex-direction: row;
+	}
+
+	.payments .contact__form {
+		width: 53%;
+	}
+}
