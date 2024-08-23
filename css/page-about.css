@@ -75,3 +75,13 @@
 	padding: 9.5px 0;
 	width: 100%;
 }
+
+@media (max-width: 1439px) {
+	.about__content {
+		max-width: 70%;
+	}
+
+	.about .banner {
+		display: none;
+	}
+}
