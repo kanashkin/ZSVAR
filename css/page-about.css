@@ -93,3 +93,14 @@
 		max-width: 80%;
 	}
 }
+
+@media (max-width: 989px) {
+	.about__content {
+		max-width: 100%;
+	}
+
+	.about .circle {
+		right: 115%;
+		top: 0;
+	}
+}

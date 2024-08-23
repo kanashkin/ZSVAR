@@ -71,7 +71,7 @@ function similarSwiper() {
 
     if (swiperEl) {
         new Swiper(swiperEl, {
-            slidesPerView: 2,
+            slidesPerView: 'auto',
             loop: true,
             speed: 600,
             spaceBetween: 8,
@@ -216,13 +216,13 @@ function catalogCollapse() {
 }
 
 function mobileSubMenu() {
-    const openTriggers = document.querySelectorAll('.mobile__menu-list-item.sub')
+    const openTriggers = document.querySelectorAll('.mobile__menu-list-item.sub>a')
 
     if (openTriggers.length) {
         openTriggers.forEach(function(item) {
             item.addEventListener('click', function(e) {
                 e.preventDefault()
-                const currentSubMenu = this.querySelector('.mobile__submenu')
+                const currentSubMenu = this.nextElementSibling
 
                 if (currentSubMenu) {
                     currentSubMenu.classList.toggle('active')
@@ -248,6 +248,14 @@ function mobileMenu() {
             document.body.classList.toggle('non-scroll')
             menuEl.classList.toggle('active')
         })
+
+        window.addEventListener('click', function(e) {
+            if (!e.target.closest('.mobile__menu') && !e.target.closest('.header__block-burger')) {
+                triggerBtn.classList.remove('active')
+                document.body.classList.remove('non-scroll')
+                menuEl.classList.remove('active')
+            }
+        }) 
     }
 }
 

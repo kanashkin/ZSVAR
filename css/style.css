@@ -114,7 +114,9 @@ span {
 }
 
 [class^=_icon-],
-[class*=" _icon-"] {
+[class*=" _icon-"],
+.icon-el::after,
+.icon-el::before {
 	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: "icomoon" !important;
 	speak: never;
@@ -582,7 +584,6 @@ span {
 
 	.mobile__menu {
 		position: absolute;
-		z-index: 2;
 		right: 0;
 		top: 75px;
 		height: 100vh;
@@ -595,10 +596,14 @@ span {
 		gap: 30px;
 		padding: 40px 16px;
 		opacity: 0;
+		z-index: -1;
+		pointer-events: none;
 		transition: 0.5s all;
 	}
 
 	.mobile__menu.active {
+		z-index: 10;
+		pointer-events: all;
 		opacity: 1;
 	}
 
@@ -634,9 +639,11 @@ span {
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
+	pointer-events: none;
 }
 
 .mobile__submenu.active {
+	pointer-events: all;
 	opacity: 1;
 	margin-top: 12px;
 }
@@ -968,7 +975,7 @@ span {
 
 @media (max-width: 989px) {
 	.contact__wrapper {
-		gap: 40px;
+		gap: 40px !important;
 	}
 
 	.contact__data {
@@ -1111,7 +1118,9 @@ span {
 }
 
 [class^=_icon-],
-[class*=" _icon-"] {
+[class*=" _icon-"],
+.icon-el::after,
+.icon-el::before {
 	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: "icomoon" !important;
 	speak: never;
@@ -1246,4 +1255,10 @@ span {
 	color: #636363;
 	background: #0D101B;
 	padding: 11px 32px;
+}
+
+@media (max-width: 989px) {
+	.catalog__nav {
+		width: 100%;
+	}
 }

@@ -8,6 +8,7 @@
 	margin-top: 108px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
+	gap: 40px 20px;
 }
 
 .contacts__items-list {
@@ -49,6 +50,24 @@
 
 	.contacts__items {
 		margin-top: 80px;
-		gap: 20px;
+	}
+}
+
+@media (max-width: 989px) {
+	.contacts .circle:nth-child(1) {
+		right: 120%;
+	}
+
+	.contacts .circle:nth-child(2) {
+		left: 120%;
+	}
+
+	.contacts__items {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.contacts__items-list {
+		flex-direction: row;
+		grid-column: span 2;
 	}
 }
