@@ -12,6 +12,10 @@
 body {
 	font-family: 'NTSomic', sans-serif;
 	background: #0F121F;
+
+	&.non-scroll {
+		overflow: hidden;
+	}
 }
 
 img {

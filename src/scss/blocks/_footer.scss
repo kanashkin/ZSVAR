@@ -116,3 +116,23 @@
         }
     }
 }
+
+@media(max-width: 989px) {
+    .footer {
+        padding: 80px 0;
+        &__content {
+            flex-direction: column;
+            gap: 60px;
+        }
+        &__logo {
+            max-width: 20%;
+            order: -1;
+        }
+        &__navs {
+            width: calc(100% - 28px);
+        }
+        &__nav {
+            width: 30%;
+        }
+    }
+}

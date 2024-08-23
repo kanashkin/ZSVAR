@@ -222,6 +222,35 @@
     }
 }
 
+@media(max-width: 989px) {
+    .promo {
+        margin: 160px 0 80px;
+
+        &-slide {
+            &__details {
+                display: none;
+            }
+        }
+
+        &-product {
+            width: 60%;
+            gap: 60px;
+
+            &__title br {
+                display: none;
+            }
+
+            &__actions {
+                width: 60%;
+            }
+
+            &__photo {
+                width: 40%;
+            }
+        }
+    }
+}
+
 // POPULAR
 
 .popular {
@@ -273,6 +302,19 @@
         position: absolute;
         right: 0;
         bottom: calc(100% + 30px);
+    }
+}
+
+@media(max-width: 989px) {
+    .popular {
+        overflow: hidden;
+        &-swiper {
+            width: calc(100% + 50vw);
+
+            .swiper-slide {
+                width: 40vw !important;
+            }
+        }
     }
 }
 
@@ -410,6 +452,19 @@
     }
 }
 
+@media(max-width: 989px) {
+    .advantages {
+        .circle:nth-child(1) {
+            right: 120%;
+            top: 22%;
+        }
+        .circle:nth-child(2) {
+            left: 120%;
+            bottom: 20%;
+        }
+    }
+}
+
 // CATALOG
 
 .catalog {
@@ -496,6 +551,20 @@
     }
 }
 
+@media(max-width: 989px) {
+    .catalog {
+        .circle:nth-child(1) {
+            top: 22%;
+            right: 120%;
+            transform: none;
+        }
+        .circle:nth-child(2) {
+            left: 120%;
+            bottom: 10%;
+        }
+    }
+}
+
 // ABOUT
 
 .about {
@@ -538,6 +607,7 @@
         max-width: 207px;
 
         &-value {
+            display: block;
             font-size: 70px;
             font-weight: 700;
             line-height: calc(77 / 70 * 100%);
@@ -569,6 +639,30 @@
     }
 }
 
+@media(max-width: 989px) {
+    .about {
+        &__wrapper {
+            display: block;
+        }
+        &-text {
+            font-size: 16px;
+        }
+        &__content {
+            width: 100%;
+            margin-bottom: 60px;
+        }
+        &__stat-items {
+            justify-content: flex-start;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        &__img {
+            aspect-ratio: 1 / .5;
+            width: 100%;
+        }
+    }
+}
+
 // CONTACT
 
 .contact {
@@ -581,4 +675,10 @@
 .contact .circle {
     right: 100%;
     bottom: -300px;
+}
+
+@media(max-width: 989px) {
+    .contact .circle {
+        right: 115%;
+    }
 }

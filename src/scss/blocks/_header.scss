@@ -116,9 +116,41 @@
 
         &-burger {
             display: none;
-            font-size: 14px;
+            width: 36px;
+            height: 36px;
+            position: relative;
+
+            i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                transition: .4s all;
+            }
+
+            ._icon-burger {
+                font-size: 16px;
+                opacity: 1;
+            }
+
+            &.active ._icon-burger {
+                opacity: 0;
+            }
+
+            ._icon-close {
+                font-size: 21px;
+            }
+
+            &.active ._icon-close {
+                opacity: 1;
+            }
         }
     }
+}
+
+.mobile__menu {
+    display: none;
 }
 
 @media(max-width: 1279px) {
@@ -140,5 +172,93 @@
             gap: 14px;
             margin: 0;
         }
+    }
+}
+
+@media(max-width: 989px) {
+    .header {
+        padding: 19px 0;
+
+        &__nav {
+            display: none;
+        }
+
+        &__block {
+            &-search {
+                display: none;
+            }
+            &-burger {
+                display: block;
+            }
+        }
+    }
+
+    .mobile__menu {
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        top: 75px;
+        height: 100vh;
+        width: 40vw;
+        backdrop-filter: blur(10px);
+        background: rgba(0, 0, 0, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 16px;
+
+        opacity: 0;
+        transition: .5s all;
+
+        &.active {
+            opacity: 1;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        &-list-item {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: calc(23 / 18 * 100%);
+            color: #ffffff;
+
+            &>a {
+                display: flex;
+                align-items: flex-end;
+                gap: 8px;
+            }
+
+            i {
+                font-size: 8px;
+                margin-bottom: 5.5px;
+            }
+        }
+    }
+}
+
+.mobile__submenu {
+    height: 0px;
+    opacity: 0;
+    transition: .4s all;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &.active {
+        opacity: 1;
+        margin-top: 12px;
+    }
+
+    &-item {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: calc(18 / 14 * 100%);
+        color: #ffffff;
+        opacity: .6;
     }
 }
