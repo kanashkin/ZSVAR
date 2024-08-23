@@ -14,6 +14,10 @@ body {
 	background: #0F121F;
 }
 
+body.non-scroll {
+	overflow: hidden;
+}
+
 img {
 	max-width: 100%;
 }
@@ -101,10 +105,16 @@ span {
 	font-display: block;
 }
 
+@font-face {
+	font-family: "icomoon";
+	src: url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
 [class^=_icon-],
-[class*=" _icon-"],
-.icon-el::after,
-.icon-el::before {
+[class*=" _icon-"] {
 	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: "icomoon" !important;
 	speak: never;
@@ -116,6 +126,11 @@ span {
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+._icon-close:before {
+	content: "\e90a";
+	color: #fff;
 }
 
 ._icon-arrow-left:before {
@@ -490,7 +505,39 @@ span {
 
 .header__block-burger {
 	display: none;
-	font-size: 14px;
+	width: 36px;
+	height: 36px;
+	position: relative;
+}
+
+.header__block-burger i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: 0.4s all;
+}
+
+.header__block-burger ._icon-burger {
+	font-size: 16px;
+	opacity: 1;
+}
+
+.header__block-burger.active ._icon-burger {
+	opacity: 0;
+}
+
+.header__block-burger ._icon-close {
+	font-size: 21px;
+}
+
+.header__block-burger.active ._icon-close {
+	opacity: 1;
+}
+
+.mobile__menu {
+	display: none;
 }
 
 @media (max-width: 1279px) {
@@ -514,6 +561,92 @@ span {
 		gap: 14px;
 		margin: 0;
 	}
+}
+
+@media (max-width: 989px) {
+	.header {
+		padding: 19px 0;
+	}
+
+	.header__nav {
+		display: none;
+	}
+
+	.header__block-search {
+		display: none;
+	}
+
+	.header__block-burger {
+		display: block;
+	}
+
+	.mobile__menu {
+		position: absolute;
+		z-index: 2;
+		right: 0;
+		top: 75px;
+		height: 100vh;
+		width: 40vw;
+		backdrop-filter: blur(10px);
+		background: rgba(0, 0, 0, 0.6);
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		padding: 40px 16px;
+		opacity: 0;
+		transition: 0.5s all;
+	}
+
+	.mobile__menu.active {
+		opacity: 1;
+	}
+
+	.mobile__menu-list {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.mobile__menu-list-item {
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 127.7777777778%;
+		color: #ffffff;
+	}
+
+	.mobile__menu-list-item>a {
+		display: flex;
+		align-items: flex-end;
+		gap: 8px;
+	}
+
+	.mobile__menu-list-item i {
+		font-size: 8px;
+		margin-bottom: 5.5px;
+	}
+}
+
+.mobile__submenu {
+	height: 0px;
+	opacity: 0;
+	transition: 0.4s all;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.mobile__submenu.active {
+	opacity: 1;
+	margin-top: 12px;
+}
+
+.mobile__submenu-item {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 128.5714285714%;
+	color: #ffffff;
+	opacity: 0.6;
 }
 
 .footer {
@@ -628,6 +761,30 @@ span {
 
 	.footer__logo {
 		max-width: 15%;
+	}
+}
+
+@media (max-width: 989px) {
+	.footer {
+		padding: 80px 0;
+	}
+
+	.footer__content {
+		flex-direction: column;
+		gap: 60px;
+	}
+
+	.footer__logo {
+		max-width: 20%;
+		order: -1;
+	}
+
+	.footer__navs {
+		width: calc(100% - 28px);
+	}
+
+	.footer__nav {
+		width: 30%;
 	}
 }
 
@@ -809,6 +966,20 @@ span {
 	}
 }
 
+@media (max-width: 989px) {
+	.contact__wrapper {
+		gap: 40px;
+	}
+
+	.contact__data {
+		font-size: 30px;
+	}
+
+	.contact__form {
+		padding: 30px 20px;
+	}
+}
+
 .iti--separate-dial-code .iti__selected-flag {
 	background: transparent;
 	padding: 17px 0 17px 16px;
@@ -931,10 +1102,16 @@ span {
 	font-display: block;
 }
 
+@font-face {
+	font-family: "icomoon";
+	src: url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
 [class^=_icon-],
-[class*=" _icon-"],
-.icon-el::after,
-.icon-el::before {
+[class*=" _icon-"] {
 	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: "icomoon" !important;
 	speak: never;
@@ -946,6 +1123,11 @@ span {
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+._icon-close:before {
+	content: "\e90a";
+	color: #fff;
 }
 
 ._icon-arrow-left:before {

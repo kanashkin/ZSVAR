@@ -47,7 +47,7 @@ function popularSwiper(i) {
     })
 
     const popularSwiper = new Swiper(popularSwipers[i], {
-        slidesPerView: 3,
+        slidesPerView: 'auto',
         speed: 600,
         spaceBetween: 8,
         loop: true,
@@ -56,6 +56,9 @@ function popularSwiper(i) {
             nextEl: popularSwiperNext,
         },
         breakpoints: {
+            990: {
+                slidesPerView: 3
+            },
             1280: {
                 slidesPerView: 4
             }
@@ -212,10 +215,48 @@ function catalogCollapse() {
     }
 }
 
+function mobileSubMenu() {
+    const openTriggers = document.querySelectorAll('.mobile__menu-list-item.sub')
+
+    if (openTriggers.length) {
+        openTriggers.forEach(function(item) {
+            item.addEventListener('click', function(e) {
+                e.preventDefault()
+                const currentSubMenu = this.querySelector('.mobile__submenu')
+
+                if (currentSubMenu) {
+                    currentSubMenu.classList.toggle('active')
+
+                    if (currentSubMenu.classList.contains('active')) {
+                        currentSubMenu.style.height = currentSubMenu.scrollHeight + 'px'
+                    } else {
+                        currentSubMenu.style.height = ''
+                    }
+                }
+            })
+        })
+    }
+}
+
+function mobileMenu() {
+    const triggerBtn = document.querySelector('.header__block-burger')
+    const menuEl = document.querySelector('.mobile__menu')
+
+    if (triggerBtn && menuEl) {
+        triggerBtn.addEventListener('click', function() {
+            triggerBtn.classList.toggle('active')
+            document.body.classList.toggle('non-scroll')
+            menuEl.classList.toggle('active')
+        })
+    }
+}
+
 window.addEventListener('DOMContentLoaded', function() {
     popularTabs()
     phoneMask()
     promoSlider()
     catalogCollapse()
     similarSwiper()
+    mobileSubMenu()
+    mobileMenu()
 })
