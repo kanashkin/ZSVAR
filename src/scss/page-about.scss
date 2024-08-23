@@ -97,3 +97,15 @@
         }
     }
 }
+
+@media(max-width: 989px) {
+    .about {
+        &__content {
+            max-width: 100%;
+        }
+        .circle {
+            right: 115%;
+            top: 0;
+        }
+    }
+}

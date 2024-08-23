@@ -67,3 +67,9 @@
         padding: 11px 32px;
     }
 }
+
+@media(max-width: 989px) {
+    .catalog__nav {
+        width: 100%;
+    }
+}

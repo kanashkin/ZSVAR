@@ -89,7 +89,7 @@
 @media(max-width: 989px) {
     .contact {
         &__wrapper {
-            gap: 40px;
+            gap: 40px !important;
         }
         &__data {
             font-size: 30px;

@@ -56,7 +56,8 @@
   font-display: block;
 }
 
-[class^="_icon-"], [class*=" _icon-"] {
+[class^="_icon-"], [class*=" _icon-"],
+.icon-el::after, .icon-el::before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;

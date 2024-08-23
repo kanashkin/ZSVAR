@@ -68,8 +68,30 @@
             flex-direction: row;
         }
 
+        .contact__data {
+            align-items: flex-start;
+        }
+
         .contact__form {
             width: 53%;
+        }
+    }
+}
+
+@media(max-width: 989px) {
+    .payments {
+        &__wrapper {
+            gap: 60px;
+        }
+        &__content {
+            max-width: 100%;
+        }
+        .circle:nth-child(1) {
+            top: 0;
+            right: 115%;
+        }
+        .circle:nth-child(2) {
+            left: 110%;
         }
     }
 }
