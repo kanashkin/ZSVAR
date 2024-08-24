@@ -236,3 +236,22 @@
     }
 }
 
+@media(max-width: 767px) {
+    .product {
+        padding-bottom: 80px;
+
+        &__main {
+            gap: 20px;
+            align-items: flex-end;
+        }
+
+        &__photo-wrap {
+            width: 40%;
+        }
+
+        .similar-swiper .swiper-slide {
+            width: 53vw !important;
+        }
+    }
+}
+

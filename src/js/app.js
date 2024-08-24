@@ -259,6 +259,34 @@ function mobileMenu() {
     }
 }
 
+function catalogSwiper() {
+    const swiperEl = document.querySelector('.catalog-swiper')
+
+    if (swiperEl) {
+        function create() {
+            new Swiper(swiperEl, {
+                slidesPerView: 'auto',
+                spaceBetween: 8,
+                loop: true,
+                speed: 600,
+                navigation: {
+                    prevEl: '.catalog-swiper__prev',
+                    nextEl: '.catalog-swiper__next'
+                }
+            })
+        }
+
+        function checkWidth() {
+            if (window.innerWidth <= 767) {
+                create()
+            }
+        }
+
+        window.addEventListener('resize', checkWidth)
+        checkWidth()
+    }
+}
+
 window.addEventListener('DOMContentLoaded', function() {
     popularTabs()
     phoneMask()
@@ -267,4 +295,5 @@ window.addEventListener('DOMContentLoaded', function() {
     similarSwiper()
     mobileSubMenu()
     mobileMenu()
+    catalogSwiper()
 })

@@ -9,6 +9,15 @@
 	box-sizing: border-box;
 }
 
+*::-webkit-scrollbar {
+  	display: none;
+}
+ 
+* {
+	-ms-overflow-style: none;  /* IE и Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+
 body {
 	font-family: 'NTSomic', sans-serif;
 	background: #0F121F;

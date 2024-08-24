@@ -73,3 +73,17 @@
         }
     }
 }
+
+@media(max-width: 767px) {
+    .contacts {
+        &__items {
+            margin-top: 60px;
+            grid-template-columns: repeat(2, 1fr);
+
+            &-list {
+                grid-column: span 1;
+                flex-direction: column;
+            }
+        }
+    }
+}
