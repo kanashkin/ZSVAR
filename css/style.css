@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
 	padding: 0;
 	margin: 0;
@@ -7,6 +9,17 @@
 	-webkit-overflow-scrolling: touch;
 	-webkit-tap-highlight-color: transparent;
 	box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+	display: none;
+}
+
+* {
+	-ms-overflow-style: none;
+	/* IE и Edge */
+	scrollbar-width: none;
+	/* Firefox */
 }
 
 body {
@@ -1130,6 +1143,10 @@ span {
 
 	.map__form {
 		padding: 20px;
+	}
+
+	.map__form-inputs {
+		margin-bottom: 48px;
 	}
 
 	.map__form-title {

@@ -240,3 +240,22 @@
 		width: 40vw !important;
 	}
 }
+
+@media (max-width: 767px) {
+	.product {
+		padding-bottom: 80px;
+	}
+
+	.product__main {
+		gap: 20px;
+		align-items: flex-end;
+	}
+
+	.product__photo-wrap {
+		width: 40%;
+	}
+
+	.product .similar-swiper .swiper-slide {
+		width: 53vw !important;
+	}
+}

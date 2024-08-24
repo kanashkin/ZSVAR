@@ -71,3 +71,15 @@
 		grid-column: span 2;
 	}
 }
+
+@media (max-width: 767px) {
+	.contacts__items {
+		margin-top: 60px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.contacts__items-list {
+		grid-column: span 1;
+		flex-direction: column;
+	}
+}

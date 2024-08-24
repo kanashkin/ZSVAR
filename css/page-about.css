@@ -26,11 +26,14 @@
 	top: 0;
 }
 
-.documents-swiper .swiper-wrapper {
-	margin-top: 32px;
+.documents__list {
 	display: grid;
-	gap: 8px;
 	grid-template-columns: repeat(3, 1fr);
+	gap: 8px;
+}
+
+.documents__list-wrapper {
+	margin-top: 32px;
 }
 
 .document {
@@ -102,5 +105,21 @@
 	.about .circle {
 		right: 115%;
 		top: 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.documents__list {
+		width: max-content;
+	}
+
+	.documents__list-wrapper {
+		padding-right: 20px;
+		width: calc(100% + 20px);
+		overflow-x: auto;
+	}
+
+	.document {
+		width: 42vw;
 	}
 }
