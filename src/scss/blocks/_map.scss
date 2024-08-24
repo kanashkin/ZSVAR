@@ -1,8 +1,15 @@
 // MAP
 
 .map {
-    padding: 58px 0;
-    position: relative;
+
+    &__title {
+        display: none;
+    }
+
+    &__inner {
+        padding: 58px 0;
+        position: relative;
+    }
 
     &__el {
         position: absolute;
@@ -65,5 +72,24 @@
 @media(max-width: 1279px) {
     .map__form {
         margin: 0 auto;
+    }
+}
+
+@media(max-width: 767px) {
+    .map {
+        &__inner {
+            padding: 16px 0 60px;
+        }
+        &__title {
+            display: flex;
+            margin-bottom: 40px;
+        }
+        &__form {
+            padding: 20px;
+
+            &-title {
+                display: none;
+            }
+        }
     }
 }

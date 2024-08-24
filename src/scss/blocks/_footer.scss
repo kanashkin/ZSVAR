@@ -136,3 +136,28 @@
         }
     }
 }
+
+@media(max-width: 767px) {
+    .footer {
+        &__logo {
+            max-width: 30%;
+        }
+        &__navs {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 60px;
+        }
+        &__nav {
+            width: 40%;
+        }
+        &__info {
+            &-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+            &-nav {
+                width: auto;
+            }
+        }
+    }
+}

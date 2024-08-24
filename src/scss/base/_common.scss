@@ -40,6 +40,12 @@
     }
 }
 
+@media(max-width: 767px) {
+    .swiper__nav-btn i {
+        font-size: 18px;
+    }
+}
+
 // TITLES
 
 .title__wrapper {
@@ -139,6 +145,12 @@
     height: 618px;
     background: $red-color;
     filter: blur(200px);
+}
+
+@media(max-width: 767px) {
+    .circle {
+        display: none;
+    }
 }
 
 // BREADCRUMBS

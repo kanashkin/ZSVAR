@@ -184,7 +184,8 @@
         }
 
         &__block {
-            &-search {
+            &-search,
+            &-cart {
                 display: none;
             }
             &-burger {
