@@ -71,42 +71,43 @@
 				</button>
 			</div>
 		</div>
-		<div class="mobile__menu">
-			<nav class="mobile__menu-nav">
-				<ul class="mobile__menu-list">
-					<li class="mobile__menu-list-item">
-						<a href="/">Главная</a>
-					</li>
-					<li class="mobile__menu-list-item sub">
-						<a>
-							Компания
-							<i class="_icon-menu-arrow"></i>
-						</a>
-						<ul class="mobile__submenu">
-							<li class="mobile__submenu-item">
-								<a href="/page-about.html">О компании</a>
-							</li>
-							<li class="mobile__submenu-item">
-								<a href="/page-payments.html">Оплата и Доставка</a>
-							</li>
-						</ul>
-					</li>
-					<li class="mobile__menu-list-item">
-						<a href="/page-catalog.html">
-							Продукция
-							<i class="_icon-menu-catalog"></i>
-						</a>
-					</li>
-					<li class="mobile__menu-list-item">
-						<a href="/page-contacts.html">Контакты</a>
-					</li>
-					<li class="mobile__menu-list-item">
-						<a href="/">Корзина</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
 	</header>
+
+	<div class="mobile__menu">
+		<nav class="mobile__menu-nav">
+			<ul class="mobile__menu-list">
+				<li class="mobile__menu-list-item">
+					<a href="/">Главная</a>
+				</li>
+				<li class="mobile__menu-list-item sub">
+					<a>
+						Компания
+						<i class="_icon-menu-arrow"></i>
+					</a>
+					<ul class="mobile__submenu">
+						<li class="mobile__submenu-item">
+							<a href="/page-about.html">О компании</a>
+						</li>
+						<li class="mobile__submenu-item">
+							<a href="/page-payments.html">Оплата и Доставка</a>
+						</li>
+					</ul>
+				</li>
+				<li class="mobile__menu-list-item">
+					<a href="/page-catalog.html">
+						Продукция
+						<i class="_icon-menu-catalog"></i>
+					</a>
+				</li>
+				<li class="mobile__menu-list-item">
+					<a href="/page-contacts.html">Контакты</a>
+				</li>
+				<li class="mobile__menu-list-item">
+					<a href="/">Корзина</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
 
 	<main>
 		<section class="product">
@@ -136,7 +137,7 @@
 				</nav>
 				<h1 class="product__title title">Сварочная проволока Св-08Г2С (ER70S-6) BIZON HCW-50A D-300 1.2</h1>
 				<div class="product__wrapper">
-					<ul class="catalog__nav">
+					<nav class="catalog__nav">
 						<ul class="catalog__nav-items">
 							<li class="catalog__nav-item">
 								<div class="catalog__nav-main icon-el" href="">Популярные товары</div>
@@ -177,7 +178,7 @@
 								<div class="catalog__nav-main icon-el" href="">Расходные материалы</div>
 							</li>
 						</ul>
-					</ul>
+					</nav>
 					<div class="product__content">
 						<div class="product__main">
 							<div class="product__photo-wrap">
@@ -423,42 +424,50 @@
 		</section>
 
 		<section class="map">
-			<div class="map__el">
-				<iframe
-					src="https://yandex.ru/map-widget/v1/?um=constructor%3A802626bf3f11fb73086139c6d69c5b1ee949b3874446fa17d79505fa0cfac226&amp;source=constructor"
-					width="100%" height="100%" frameborder="0"></iframe>
+			<div class="container">
+				<div class="title__wrapper map__title">
+					<span class="title__number">06</span>
+					<h2 class="title">Связаться с нами</h2>
+				</div>
 			</div>
+			<div class="map__inner">
+				<div class="map__el">
+					<iframe
+						src="https://yandex.ru/map-widget/v1/?um=constructor%3A802626bf3f11fb73086139c6d69c5b1ee949b3874446fa17d79505fa0cfac226&amp;source=constructor"
+						width="100%" height="100%" frameborder="0"></iframe>
+				</div>
 
-			<div class="container map__wrapper">
-				<form class="map__form">
-					<div class="title__wrapper map__form-title">
-						<span class="title__number">06</span>
-						<h2 class="title">Связаться с нами</h2>
-					</div>
-					<div class="map__form-inputs">
-						<div class="map__form-input-wrapper map__input">
-							<label class="map__input-label">Ваше имя</label>
-							<input class="map__input-el" type="text" placeholder="Представьтесь, пожалуйста">
+				<div class="container map__wrapper">
+					<form class="map__form">
+						<div class="title__wrapper map__form-title">
+							<span class="title__number">06</span>
+							<h2 class="title">Связаться с нами</h2>
 						</div>
-						<div class="map__form-input-wrapper map__input">
-							<label class="map__input-label">Как связаться?</label>
-							<input class="map__input-el" type="text" placeholder="Напишите удобный способ для связи">
+						<div class="map__form-inputs">
+							<div class="map__form-input-wrapper map__input">
+								<label class="map__input-label">Ваше имя</label>
+								<input class="map__input-el" type="text" placeholder="Представьтесь, пожалуйста">
+							</div>
+							<div class="map__form-input-wrapper map__input">
+								<label class="map__input-label">Как связаться?</label>
+								<input class="map__input-el" type="text" placeholder="Напишите удобный способ для связи">
+							</div>
+							<div class="map__form-input-wrapper map__input">
+								<label class="map__input-label">Остались вопросы?</label>
+								<input class="map__input-el" type="text" placeholder="Опишите их">
+							</div>
 						</div>
-						<div class="map__form-input-wrapper map__input">
-							<label class="map__input-label">Остались вопросы?</label>
-							<input class="map__input-el" type="text" placeholder="Опишите их">
+						<div class="contact__form-footer form-footer">
+							<div class="form-accept">
+								<input class="form-accept__input" type="checkbox" required>
+								<p class="form-accept__text">
+									Я согласен(на) на обработку персональных данных
+								</p>
+							</div>
+							<button type="submit" class="red-btn form-submit">Написать</button>
 						</div>
-					</div>
-					<div class="contact__form-footer form-footer">
-						<div class="form-accept">
-							<input class="form-accept__input" type="checkbox" required>
-							<p class="form-accept__text">
-								Я согласен(на) на обработку персональных данных
-							</p>
-						</div>
-						<button type="submit" class="red-btn form-submit">Написать</button>
-					</div>
-				</form>
+					</form>
+				</div>
 			</div>
 
 		</section>

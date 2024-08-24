@@ -225,6 +225,12 @@ span {
 	font-weight: 600;
 }
 
+@media (max-width: 767px) {
+	.swiper__nav-btn i {
+		font-size: 18px;
+	}
+}
+
 .title__wrapper {
 	display: flex;
 	align-items: flex-start;
@@ -313,6 +319,12 @@ span {
 	height: 618px;
 	background: #C30000;
 	filter: blur(200px);
+}
+
+@media (max-width: 767px) {
+	.circle {
+		display: none;
+	}
 }
 
 .breadcrumbs {
@@ -574,7 +586,8 @@ span {
 		display: none;
 	}
 
-	.header__block-search {
+	.header__block-search,
+	.header__block-cart {
 		display: none;
 	}
 
@@ -795,6 +808,31 @@ span {
 	}
 }
 
+@media (max-width: 767px) {
+	.footer__logo {
+		max-width: 30%;
+	}
+
+	.footer__navs {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		gap: 60px;
+	}
+
+	.footer__nav {
+		width: 40%;
+	}
+
+	.footer__info-content {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.footer__info-nav {
+		width: auto;
+	}
+}
+
 .product-card {
 	width: 100%;
 	padding: 36px 20px 18px 20px;
@@ -987,6 +1025,21 @@ span {
 	}
 }
 
+@media (max-width: 767px) {
+	.contact__wrapper {
+		flex-direction: column !important;
+		gap: 24px !important;
+	}
+
+	.contact__form {
+		width: 100% !important;
+	}
+
+	.contact__data {
+		align-items: center !important;
+	}
+}
+
 .iti--separate-dial-code .iti__selected-flag {
 	background: transparent;
 	padding: 17px 0 17px 16px;
@@ -996,7 +1049,11 @@ span {
 	color: #ffffff;
 }
 
-.map {
+.map__title {
+	display: none;
+}
+
+.map__inner {
 	padding: 58px 0;
 	position: relative;
 }
@@ -1058,6 +1115,25 @@ span {
 @media (max-width: 1279px) {
 	.map__form {
 		margin: 0 auto;
+	}
+}
+
+@media (max-width: 767px) {
+	.map__inner {
+		padding: 16px 0 60px;
+	}
+
+	.map__title {
+		display: flex;
+		margin-bottom: 40px;
+	}
+
+	.map__form {
+		padding: 20px;
+	}
+
+	.map__form-title {
+		display: none;
 	}
 }
 
