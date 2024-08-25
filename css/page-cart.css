@@ -114,8 +114,122 @@
 	flex-basis: 100%;
 }
 
+@media (max-width: 1279px) {
+	.cart-text {
+		font-size: 20px;
+	}
+
+	.cart__form {
+		width: 45%;
+		padding: 32px;
+	}
+
+	.cart__products {
+		max-width: 53%;
+	}
+
+	.cart-product {
+		gap: 24px;
+	}
+
+	.cart-product__photo-wrapper {
+		min-height: 180px;
+		min-width: 180px;
+	}
+}
+
+@media (max-width: 989px) {
+	.cart {
+		padding: 200px 0 80px;
+	}
+
+	.cart__title {
+		margin-bottom: 80px;
+	}
+
+	.cart__wrapper {
+		flex-direction: column;
+		gap: 80px;
+	}
+
+	.cart__products {
+		max-width: 80%;
+	}
+
+	.cart__form {
+		padding: 54px;
+		padding-top: 49px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.cart__products {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 574px) {
+	.cart {
+		padding-bottom: 64px;
+	}
+
+	.cart__title {
+		margin-bottom: 48px;
+	}
+
+	.cart__products {
+		gap: 32px;
+	}
+
+	.cart__form {
+		padding: 30px 20px;
+		padding-bottom: 48px;
+	}
+
+	.cart__form-inputs {
+		margin-bottom: 48px;
+	}
+
+	.cart__total {
+		margin-bottom: 48px;
+	}
+
+	.cart-product {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 24px;
+	}
+
+	.cart-product__photo-wrapper {
+		width: 48.7804878049%;
+		min-width: auto;
+		min-height: auto;
+	}
+
+	.cart-product__actions {
+		flex-wrap: nowrap;
+	}
+
+	.cart-product__price {
+		flex-basis: auto;
+	}
+
+	.cart-product__trash {
+		order: 4;
+		margin-left: auto;
+	}
+}
+
+@media (max-width: 440px) {
+	.cart-text {
+		font-size: 18px;
+	}
+}
+
 .popular {
 	padding-bottom: 200px;
+	overflow: hidden;
 }
 
 .popular__title {
@@ -134,6 +248,49 @@
 	position: absolute;
 	bottom: calc(100% + 28px);
 	right: 0;
+}
+
+@media (max-width: 989px) {
+	.popular {
+		padding-bottom: 140px;
+	}
+
+	.cart-popular-swiper {
+		width: calc(100% + 50vw);
+	}
+
+	.cart-popular-swiper .swiper-slide {
+		width: 40vw !important;
+	}
+}
+
+@media (max-width: 767px) {
+	.cart-popular-swiper .swiper-slide {
+		width: 53vw !important;
+	}
+}
+
+@media (max-width: 574px) {
+	.cart-popular-swiper {
+		width: 100%;
+		overflow: visible;
+	}
+
+	.cart-popular-swiper__nav {
+		margin-top: 24px;
+		position: static;
+		justify-content: center;
+	}
+
+	.cart-popular-swiper .swiper-slide {
+		width: 65vw !important;
+		transition: opacity 0.4s linear;
+		opacity: 0.3;
+	}
+
+	.cart-popular-swiper .swiper-slide-active {
+		opacity: 1;
+	}
 }
 
 .circle {
