@@ -128,3 +128,12 @@
         width: 42vw;
     }
 }
+
+@media(max-width: 574px) {
+    .about {
+        padding-bottom: 60px;
+    }
+    .document {
+        width: 57vw;
+    }
+}

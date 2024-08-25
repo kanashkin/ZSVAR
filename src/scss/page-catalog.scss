@@ -93,10 +93,34 @@
                 width: 53vw !important;
             }
             &__nav {
-                margin-top: 25px;
+                margin-top: 24px;
                 justify-content: center;
                 display: flex;
             }
+        }
+    }
+}
+
+@media(max-width: 574px) {
+    .catalog {
+        padding-bottom: 60px;
+
+        &-swiper {
+            overflow: visible;
+            width: 100%;
+
+            .swiper-slide {
+                opacity: .3;
+                transition: opacity .4s linear;
+                width: 65vw !important;
+            }
+            .swiper-slide-active {
+                opacity: 1;
+            }
+        }
+
+        &__title {
+            margin-bottom: 60px;
         }
     }
 }

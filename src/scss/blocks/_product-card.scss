@@ -74,6 +74,8 @@
     &__link {
         padding: 9.5px 36.5px;
         height: 40px;
+        align-items: center;
+        justify-content: center;
     }
 
     &__action {
@@ -87,5 +89,41 @@
     }
     &__action[data-action="minus"] {
         font-size: 2px;
+    }
+}
+
+@media(max-width: 574px) {
+    .product-card {
+        padding: 16px 12px;
+
+        &__photo {
+            width: calc(148 / (230 - 12 - 12) * 100%);
+            height: auto;
+            aspect-ratio: 1 / 1;
+        }
+        &__title {
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+        &__stock {
+            margin-bottom: 9px;
+        }
+        &__price {
+            font-size: 14px;
+            margin-bottom: 19px;
+        }
+        &__link {
+            padding: 0;
+            height: 26px;
+            max-width: 150px;
+            width: calc(130 / (230 - 12 - 12) * 100%);
+        }
+        &__actions {
+            justify-content: flex-start;
+        }
+        &__action {
+            width: 26px;
+            height: 26px;
+        }
     }
 }
