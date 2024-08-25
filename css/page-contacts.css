@@ -83,3 +83,14 @@
 		flex-direction: column;
 	}
 }
+
+@media (max-width: 574px) {
+	.contacts {
+		padding-bottom: 60px;
+	}
+
+	.contacts__items {
+		gap: 24px;
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
