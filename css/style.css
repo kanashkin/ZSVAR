@@ -37,6 +37,8 @@ img {
 
 input {
 	width: 100%;
+	box-shadow: none;
+	border-radius: 0;
 }
 
 button,
