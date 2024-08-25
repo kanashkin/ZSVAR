@@ -47,16 +47,19 @@ function popularSwiper(i) {
     })
 
     const popularSwiper = new Swiper(popularSwipers[i], {
+        spaceBetween: 8,
         slidesPerView: 'auto',
-        centeredSlides: true,
         speed: 600,
-        spaceBetween: 16,
         loop: true,
         navigation: {
             prevEl: popularSwiperPrev,
             nextEl: popularSwiperNext,
         },
         breakpoints: {
+            0: {
+                spaceBetween: 16,
+                centeredSlides: true,
+            },
             575: {
                 spaceBetween: 8,
                 centeredSlides: false
