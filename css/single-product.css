@@ -252,10 +252,95 @@
 	}
 
 	.product__photo-wrap {
+		padding: 15px 9px;
 		width: 40%;
 	}
 
 	.product .similar-swiper .swiper-slide {
 		width: 53vw !important;
+	}
+}
+
+@media (max-width: 574px) {
+	.product {
+		padding-bottom: 60px;
+	}
+
+	.product__title {
+		margin-bottom: 60px;
+	}
+
+	.product__main {
+		margin-bottom: 60px;
+		gap: 16px;
+	}
+
+	.product__photo-wrap {
+		width: 50.3048780488%;
+	}
+
+	.product__actions {
+		width: 43.9024390244%;
+	}
+
+	.product__price {
+		margin-bottom: 18px;
+		font-size: 20px;
+	}
+
+	.product__action-btn {
+		font-size: 12px;
+		padding: 10px 10px;
+	}
+
+	.product__descr {
+		max-width: 100%;
+		margin-bottom: 32px;
+	}
+
+	.product__standarts {
+		margin-bottom: 32px;
+	}
+
+	.product__standarts-title {
+		font-size: 20px;
+	}
+
+	.product__similar {
+		margin-bottom: 60px;
+	}
+
+	.product__seo {
+		gap: 32px;
+	}
+
+	.characters__item-name {
+		width: 170px;
+		font-size: 16px;
+	}
+
+	.characters__item-value {
+		font-size: 16px;
+	}
+
+	.similar-swiper {
+		overflow: visible;
+		width: 100%;
+	}
+
+	.similar-swiper__nav {
+		position: static;
+		justify-content: center;
+		margin-top: 24px;
+	}
+
+	.similar-swiper .swiper-slide {
+		opacity: 0.3;
+		transition: opacity 0.4s linear;
+		width: 65vw !important;
+	}
+
+	.similar-swiper .swiper-slide-active {
+		opacity: 1;
 	}
 }

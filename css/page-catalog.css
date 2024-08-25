@@ -100,8 +100,33 @@
 	}
 
 	.catalog-swiper__nav {
-		margin-top: 25px;
+		margin-top: 24px;
 		justify-content: center;
 		display: flex;
+	}
+}
+
+@media (max-width: 574px) {
+	.catalog {
+		padding-bottom: 60px;
+	}
+
+	.catalog-swiper {
+		overflow: visible;
+		width: 100%;
+	}
+
+	.catalog-swiper .swiper-slide {
+		opacity: 0.3;
+		transition: opacity 0.4s linear;
+		width: 65vw !important;
+	}
+
+	.catalog-swiper .swiper-slide-active {
+		opacity: 1;
+	}
+
+	.catalog__title {
+		margin-bottom: 60px;
 	}
 }

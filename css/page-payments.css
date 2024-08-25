@@ -93,3 +93,9 @@
 		left: 110%;
 	}
 }
+
+@media (max-width: 574px) {
+	.payments {
+		padding-bottom: 60px;
+	}
+}

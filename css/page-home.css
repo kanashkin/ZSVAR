@@ -248,6 +248,7 @@
 
 	.promo__header {
 		font-size: 18px;
+		width: 85%;
 	}
 
 	.promo-product {
@@ -261,6 +262,39 @@
 
 	.promo-product__actions {
 		width: 85%;
+	}
+}
+
+@media (max-width: 574px) {
+	.promo {
+		margin: 130px 0 48px;
+	}
+
+	.promo__header {
+		width: 95%;
+		font-size: 16px;
+	}
+
+	.promo-product {
+		width: 95%;
+		gap: 36px;
+	}
+
+	.promo-product__name {
+		margin-left: 16px;
+	}
+
+	.promo-product__title {
+		font-size: 20px;
+		margin-bottom: 48px;
+	}
+
+	.promo-product__price {
+		margin-bottom: 17px;
+	}
+
+	.promo-product__actions {
+		display: none;
 	}
 }
 
@@ -341,6 +375,38 @@
 
 	.popular-swiper .swiper-slide {
 		width: 53vw !important;
+	}
+}
+
+@media (max-width: 574px) {
+	.popular__tabs {
+		margin-bottom: 24px;
+	}
+
+	.popular__tab {
+		font-size: 14px;
+		padding: 9px 8px;
+	}
+
+	.popular-swiper {
+		width: 100%;
+		overflow: visible;
+	}
+
+	.popular-swiper__nav {
+		position: static;
+		margin-top: 24px;
+		justify-content: center;
+	}
+
+	.popular-swiper .swiper-slide {
+		opacity: 0.3;
+		transition: opacity 0.4s linear;
+		width: 65vw !important;
+	}
+
+	.popular-swiper .swiper-slide-active {
+		opacity: 1;
 	}
 }
 
@@ -520,6 +586,26 @@
 	}
 }
 
+@media (max-width: 574px) {
+	.advantages {
+		padding-bottom: 60px;
+	}
+
+	.advantages__title {
+		font-size: 22px;
+		margin-left: 4%;
+	}
+
+	.advantages__items {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.advantages__item:nth-child(2n) .advantages__item-number {
+		right: 0;
+		left: auto;
+	}
+}
+
 .catalog {
 	margin-bottom: 91px;
 }
@@ -634,6 +720,16 @@
 
 	.catalog__link {
 		display: none;
+	}
+}
+
+@media (max-width: 574px) {
+	.catalog {
+		margin-bottom: 60px;
+	}
+
+	.catalog__header {
+		margin-bottom: 24px;
 	}
 }
 
@@ -765,6 +861,38 @@
 	}
 }
 
+@media (max-width: 574px) {
+	.about {
+		margin-bottom: 60px;
+	}
+
+	.about-text {
+		font-size: 14px;
+	}
+
+	.about__wrapper {
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+
+	.about__stat-items {
+		gap: 10px;
+	}
+
+	.about__stat {
+		max-width: auto;
+	}
+
+	.about__stat-value {
+		font-size: 55px;
+		margin-bottom: 8px;
+	}
+
+	.about__title {
+		margin: 0 0 24px 16px;
+	}
+}
+
 .contact {
 	position: relative;
 	overflow: hidden;
@@ -780,5 +908,11 @@
 @media (max-width: 989px) {
 	.contact .circle {
 		right: 115%;
+	}
+}
+
+@media (max-width: 574px) {
+	.contact {
+		padding-bottom: 60px;
 	}
 }

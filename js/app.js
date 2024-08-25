@@ -48,14 +48,19 @@ function popularSwiper(i) {
 
     const popularSwiper = new Swiper(popularSwipers[i], {
         slidesPerView: 'auto',
+        centeredSlides: true,
         speed: 600,
-        spaceBetween: 8,
+        spaceBetween: 16,
         loop: true,
         navigation: {
             prevEl: popularSwiperPrev,
             nextEl: popularSwiperNext,
         },
         breakpoints: {
+            575: {
+                spaceBetween: 8,
+                centeredSlides: false
+            },
             990: {
                 slidesPerView: 3
             },
@@ -72,14 +77,19 @@ function similarSwiper() {
     if (swiperEl) {
         new Swiper(swiperEl, {
             slidesPerView: 'auto',
+            centeredSlides: true,
             loop: true,
             speed: 600,
-            spaceBetween: 8,
+            spaceBetween: 16,
             navigation: {
                 prevEl: '.similar-swiper__prev',
                 nextEl: '.similar-swiper__next'
             },
             breakpoints: {
+                575: {
+                    spaceBetween: 8,
+                    centeredSlides: false,
+                },
                 1280: {
                     slidesPerView: 3
                 }
@@ -266,12 +276,19 @@ function catalogSwiper() {
         function create() {
             new Swiper(swiperEl, {
                 slidesPerView: 'auto',
-                spaceBetween: 8,
+                centeredSlides: true,
+                spaceBetween: 16,
                 loop: true,
                 speed: 600,
                 navigation: {
                     prevEl: '.catalog-swiper__prev',
                     nextEl: '.catalog-swiper__next'
+                },
+                breakpoints: {
+                    575: {
+                        centeredSlides: false,
+                        spaceBetween: 8
+                    }
                 }
             })
         }
