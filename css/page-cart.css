@@ -1,0 +1,142 @@
+.cart {
+	padding: 210px 0 90px;
+	position: relative;
+	overflow: hidden;
+}
+
+.cart .circle {
+	top: 295px;
+	left: 100%;
+}
+
+.cart__title {
+	margin-bottom: 100px;
+}
+
+.cart__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.cart__products {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+	max-width: calc(100% - 107px - 537px);
+}
+
+.cart__form {
+	width: 537px;
+	padding: 54px;
+	padding-top: 49px;
+	background: rgba(15, 18, 31, 0.9);
+	border: 1px solid transparent;
+	border-image-source: linear-gradient(154.04deg, rgba(124, 139, 196, 0.4) 0%, rgba(124, 139, 195, 0) 100%);
+	border-image-slice: 1;
+}
+
+.cart__form-title {
+	margin-bottom: 40px;
+}
+
+.cart__form-inputs {
+	margin-bottom: 103px;
+}
+
+.cart__total {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	row-gap: 4px;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 110%;
+	color: #ffffff;
+	margin-bottom: 62px;
+}
+
+.cart__total-title {
+	flex-basis: 100%;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 110%;
+	color: rgb(65, 68, 81);
+}
+
+.cart-text {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 108.3333333333%;
+	color: #ffffff;
+}
+
+.cart-product {
+	display: flex;
+	align-items: center;
+	gap: 48px;
+}
+
+.cart-product__photo-wrapper {
+	min-width: 207px;
+	min-height: 207px;
+	padding: 17px 12px;
+	background: rgba(37, 45, 80, 0.6);
+	border: 1px solid transparent;
+	border-image-source: linear-gradient(154.04deg, rgba(124, 139, 196, 0.4) 0%, rgba(124, 139, 195, 0) 100%);
+	border-image-slice: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cart-product__photo-wrapper img {
+	object-fit: contain;
+	object-position: center;
+}
+
+.cart-product__name {
+	margin-bottom: 24px;
+}
+
+.cart-product__actions {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.cart-product__trash {
+	display: flex;
+}
+
+.cart-product__price {
+	flex-basis: 100%;
+}
+
+.popular {
+	padding-bottom: 200px;
+}
+
+.popular__title {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 129.1666666667%;
+	margin-bottom: 24px;
+	color: #ffffff;
+}
+
+.cart-popular-swiper__wrapper {
+	position: relative;
+}
+
+.cart-popular-swiper__nav {
+	position: absolute;
+	bottom: calc(100% + 28px);
+	right: 0;
+}
+
+.circle {
+	right: 100%;
+	top: 1350px;
+}
