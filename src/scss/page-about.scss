@@ -116,9 +116,9 @@
 @media(max-width: 767px) {
     .documents__list {
         width: max-content;
+        padding-right: 20px;
 
         &-wrapper {
-            padding-right: 20px;
             width: calc(100% + 20px);
             overflow-x: auto;
         }
