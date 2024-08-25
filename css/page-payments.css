@@ -9,11 +9,7 @@
 }
 
 .payments__wrapper {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
 
@@ -32,16 +28,11 @@
 }
 
 .payments .contact__wrapper {
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
 	flex-direction: column;
 	gap: 32px;
 }
 
 .payments .contact__data {
-	-webkit-box-align: center;
-	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -65,9 +56,6 @@
 	}
 
 	.payments__wrapper {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: column;
 		flex-direction: column;
 		gap: 80px;
 	}
@@ -75,15 +63,10 @@
 	.payments .contact__wrapper {
 		width: 100%;
 		gap: 100px;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: row;
 		flex-direction: row;
 	}
 
 	.payments .contact__data {
-		-webkit-box-align: start;
-		-ms-flex-align: start;
 		align-items: flex-start;
 	}
 

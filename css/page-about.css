@@ -20,7 +20,6 @@
 .about .banner {
 	width: 50%;
 	height: 100%;
-	-o-object-fit: cover;
 	object-fit: cover;
 	position: absolute;
 	right: 0;
@@ -28,9 +27,7 @@
 }
 
 .documents__list {
-	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: (1fr)[3];
 	grid-template-columns: repeat(3, 1fr);
 	gap: 8px;
 }
@@ -46,15 +43,8 @@
 	border: 1px solid transparent;
 	border-image-source: linear-gradient(154.04deg, rgba(124, 139, 196, 0.4) 0%, rgba(124, 139, 195, 0) 100%);
 	border-image-slice: 1;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
 	flex-direction: column;
-	-webkit-box-align: start;
-	-ms-flex-align: start;
 	align-items: flex-start;
 }
 
@@ -82,8 +72,6 @@
 
 .document__download {
 	margin: auto 0 0 0;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
 	justify-content: center;
 	padding: 9.5px 0;
 	width: 100%;
@@ -122,8 +110,6 @@
 
 @media (max-width: 767px) {
 	.documents__list {
-		width: -webkit-max-content;
-		width: -moz-max-content;
 		width: max-content;
 		padding-right: 20px;
 	}
