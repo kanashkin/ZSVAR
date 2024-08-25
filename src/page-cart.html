@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"css_link":"css/page-cart.css"
+})
+
+<body>
+	@@include('html/header.html')
+
+    <main>
+        <section class="cart">
+            <div class="container">
+                <h1 class="title cart__title">Корзина</h1>
+
+                <div class="cart__wrapper">
+                    <div class="cart__products">
+                        <div class="cart-product">
+                            <div class="cart-product__photo-wrapper">
+                                <img class="cart-product__photo" src="img/products/03.png" alt="">
+                            </div>
+                            <div class="cart-product__info">
+                                <h2 class="cart-product__name cart-text">Сварочная проволока Св-08Г2С (ER70S-6) BIZON HCW-50A D-300 1.2</h2>
+                                <div class="cart-product__actions">
+                                    <button class="product-card__action" data-action="minus">
+                                        <i class="_icon-minus"></i>
+                                    </button>
+                                    <span class="cart-product__amount cart-text">1</span>
+                                    <button class="product-card__action" data-action="plus">
+                                        <i class="_icon-plus"></i>
+                                    </button>
+                                    <button class="cart-product__trash">
+                                        <img src="img/icons/trash.svg" alt="">
+                                    </button>
+                                    <span class="cart-product__price cart-text">74 руб.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-product">
+                            <div class="cart-product__photo-wrapper">
+                                <img class="cart-product__photo" src="img/products/05.png" alt="">
+                            </div>
+                            <div class="cart-product__info">
+                                <h2 class="cart-product__name cart-text">Сварочная проволока Св-08Г2С (ER70S-6) BIZON HCW-50A D-300 1.2</h2>
+                                <div class="cart-product__actions">
+                                    <button class="product-card__action" data-action="minus">
+                                        <i class="_icon-minus"></i>
+                                    </button>
+                                    <span class="cart-product__amount cart-text">1</span>
+                                    <button class="product-card__action" data-action="plus">
+                                        <i class="_icon-plus"></i>
+                                    </button>
+                                    <button class="cart-product__trash">
+                                        <img src="img/icons/trash.svg" alt="">
+                                    </button>
+                                    <span class="cart-product__price cart-text">74 руб.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-product">
+                            <div class="cart-product__photo-wrapper">
+                                <img class="cart-product__photo" src="img/products/03.png" alt="">
+                            </div>
+                            <div class="cart-product__info">
+                                <h2 class="cart-product__name cart-text">Сварочная проволока Св-08Г2С (ER70S-6) BIZON HCW-50A D-300 1.2</h2>
+                                <div class="cart-product__actions">
+                                    <button class="product-card__action" data-action="minus">
+                                        <i class="_icon-minus"></i>
+                                    </button>
+                                    <span class="cart-product__amount cart-text">1</span>
+                                    <button class="product-card__action" data-action="plus">
+                                        <i class="_icon-plus"></i>
+                                    </button>
+                                    <button class="cart-product__trash">
+                                        <img src="img/icons/trash.svg" alt="">
+                                    </button>
+                                    <span class="cart-product__price cart-text">74 руб.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-product">
+                            <div class="cart-product__photo-wrapper">
+                                <img class="cart-product__photo" src="img/products/07.png" alt="">
+                            </div>
+                            <div class="cart-product__info">
+                                <h2 class="cart-product__name cart-text">Сварочная проволока Св-08Г2С (ER70S-6) BIZON HCW-50A D-300 1.2</h2>
+                                <div class="cart-product__actions">
+                                    <button class="product-card__action" data-action="minus">
+                                        <i class="_icon-minus"></i>
+                                    </button>
+                                    <span class="cart-product__amount cart-text">1</span>
+                                    <button class="product-card__action" data-action="plus">
+                                        <i class="_icon-plus"></i>
+                                    </button>
+                                    <button class="cart-product__trash">
+                                        <img src="img/icons/trash.svg" alt="">
+                                    </button>
+                                    <span class="cart-product__price cart-text">74 руб.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__form">
+                        <div class="title__wrapper cart__form-title">
+                            <span class="title__number">04</span>
+                            <h2 class="title">Оформление заказа</h2>
+                        </div>
+                        <div class="cart__total">
+                            <div class="cart__total-title">Итого:</div>
+                            <span class="cart__total-amount">4 товара</span>
+                            <span class="cart__total-price">296 руб.</span>
+                        </div>
+                        <div class="map__form-inputs cart__form-inputs">
+                            <div class="map__form-input-wrapper map__input">
+                                <label class="map__input-label">Ваше имя</label>
+                                <input class="map__input-el" type="text" placeholder="Представьтесь, пожалуйста">
+                            </div>
+                            <div class="map__form-input-wrapper map__input">
+                                <label class="map__input-label">Как связаться?</label>
+                                <input class="map__input-el" type="text" placeholder="Напишите удобный способ для связи">
+                            </div>
+                        </div>
+                        <div class="contact__form-footer form-footer">
+							<div class="form-accept">
+								<input class="form-accept__input" type="checkbox" required="">
+								<p class="form-accept__text">
+									Я согласен(на) на обработку персональных данных
+								</p>
+							</div>
+							<button type="submit" class="red-btn form-submit">Заказать</button>
+						</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="circle"></div>
+        </section>
+        <section class="popular">
+            <div class="container">
+                <h2 class="popular__title">Популярные товары:</h2>
+                <div class="cart-popular-swiper__wrapper">
+                    <div class="swiper cart-popular-swiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+								<article class="product-card">
+									<img class="product-card__photo" src="img/products/01.png" alt="">
+									<h3 class="product-card__title">Горелка MIG MP 26 5м DME2605</h3>
+									<span class="product-card__stock active">В наличии</span>
+									<span class="product-card__price">14 295 руб.</span>
+									<div class="product-card__actions">
+										<a class="product-card__link red-btn" href="/single-product.html">Подробнее</a>
+										<button class="product-card__action" data-action="minus">
+											<i class="_icon-minus"></i>
+										</button>
+										<button class="product-card__action" data-action="plus">
+											<i class="_icon-plus"></i>
+										</button>
+									</div>
+								</article>
+							</div>
+
+							<div class="swiper-slide">
+								<article class="product-card">
+									<img class="product-card__photo" src="img/products/02.png" alt="">
+									<h3 class="product-card__title">Горелка MIG MP 26 5м DME2605</h3>
+									<span class="product-card__stock active">В наличии</span>
+									<span class="product-card__price">14 295 руб.</span>
+									<div class="product-card__actions">
+										<a class="product-card__link red-btn" href="/single-product.html">Подробнее</a>
+										<button class="product-card__action" data-action="minus">
+											<i class="_icon-minus"></i>
+										</button>
+										<button class="product-card__action" data-action="plus">
+											<i class="_icon-plus"></i>
+										</button>
+									</div>
+								</article>
+							</div>
+
+							<div class="swiper-slide">
+								<article class="product-card">
+									<img class="product-card__photo" src="img/products/03.png" alt="">
+									<h3 class="product-card__title">Горелка MIG MP 26 5м DME2605</h3>
+									<span class="product-card__stock active">В наличии</span>
+									<span class="product-card__price">14 295 руб.</span>
+									<div class="product-card__actions">
+										<a class="product-card__link red-btn" href="/single-product.html">Подробнее</a>
+										<button class="product-card__action" data-action="minus">
+											<i class="_icon-minus"></i>
+										</button>
+										<button class="product-card__action" data-action="plus">
+											<i class="_icon-plus"></i>
+										</button>
+									</div>
+								</article>
+							</div>
+
+							<div class="swiper-slide">
+								<article class="product-card">
+									<img class="product-card__photo" src="img/products/01.png" alt="">
+									<h3 class="product-card__title">Горелка MIG MP 26 5м DME2605</h3>
+									<span class="product-card__stock active">В наличии</span>
+									<span class="product-card__price">14 295 руб.</span>
+									<div class="product-card__actions">
+										<a class="product-card__link red-btn" href="/single-product.html">Подробнее</a>
+										<button class="product-card__action" data-action="minus">
+											<i class="_icon-minus"></i>
+										</button>
+										<button class="product-card__action" data-action="plus">
+											<i class="_icon-plus"></i>
+										</button>
+									</div>
+								</article>
+							</div>
+
+							<div class="swiper-slide">
+								<article class="product-card">
+									<img class="product-card__photo" src="img/products/02.png" alt="">
+									<h3 class="product-card__title">Горелка MIG MP 26 5м DME2605</h3>
+									<span class="product-card__stock active">В наличии</span>
+									<span class="product-card__price">14 295 руб.</span>
+									<div class="product-card__actions">
+										<a class="product-card__link red-btn" href="/single-product.html">Подробнее</a>
+										<button class="product-card__action" data-action="minus">
+											<i class="_icon-minus"></i>
+										</button>
+										<button class="product-card__action" data-action="plus">
+											<i class="_icon-plus"></i>
+										</button>
+									</div>
+								</article>
+							</div>
+
+                        </div>
+                    </div>
+                    <div class="swiper__nav cart-popular-swiper__nav">
+						<button class="swiper__nav-btn cart-popular-swiper__prev">
+							<i class="_icon-arrow-left"></i>
+						</button>
+						<button class="swiper__nav-btn cart-popular-swiper__next">
+							<i class="_icon-arrow-right"></i>
+						</button>
+					</div>
+                </div>
+            </div>
+        </section>
+        <div class="circle"></div>
+        @@include('html/map.html')
+    </main>
+
+    @@include('html/footer.html')
+
+    <script src="js/app.js"></script>
+</body>
+</html>

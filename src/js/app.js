@@ -307,6 +307,39 @@ function catalogSwiper() {
     }
 }
 
+function cartPopularSwiper() {
+    const swiperEl = document.querySelector('.cart-popular-swiper')
+
+    if (swiperEl) {
+        new Swiper(swiperEl, {
+            spaceBetween: 8,
+            slidesPerView: 'auto',
+            speed: 600,
+            loop: true,
+            navigation: {
+                prevEl: '.cart-popular-swiper__prev',
+                nextEl: '.cart-popular-swiper__next',
+            },
+            breakpoints: {
+                0: {
+                    spaceBetween: 16,
+                    centeredSlides: true,
+                },
+                575: {
+                    spaceBetween: 8,
+                    centeredSlides: false,
+                },
+                990: {
+                    slidesPerView: 3,
+                },
+                1280: {
+                    slidesPerView: 4,
+                },
+            },
+        })
+    }
+}
+
 window.addEventListener('DOMContentLoaded', function() {
     popularTabs()
     phoneMask()
@@ -316,4 +349,5 @@ window.addEventListener('DOMContentLoaded', function() {
     mobileSubMenu()
     mobileMenu()
     catalogSwiper()
+    cartPopularSwiper()
 })

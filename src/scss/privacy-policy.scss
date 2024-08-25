@@ -58,3 +58,15 @@
         gap: 12px;
     }
 }
+
+@media(max-width: 989px) {
+    .privacy__title {
+        margin-bottom: 80px;
+    }
+}
+
+@media(max-width: 574px) {
+    .privacy__title {
+        margin-bottom: 60px;
+    }
+}
