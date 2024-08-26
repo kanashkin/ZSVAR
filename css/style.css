@@ -27,10 +27,6 @@ body {
 	background: #0F121F;
 }
 
-body.non-scroll {
-	overflow: hidden;
-}
-
 img {
 	max-width: 100%;
 }
@@ -445,10 +441,10 @@ span {
 
 .header {
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 2;
+	z-index: 5;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
@@ -641,7 +637,7 @@ span {
 	}
 
 	.mobile__menu {
-		position: absolute;
+		position: fixed;
 		right: 0;
 		top: 75px;
 		height: 100vh;
