@@ -258,14 +258,12 @@ function mobileMenu() {
     if (triggerBtn && menuEl) {
         triggerBtn.addEventListener('click', function() {
             triggerBtn.classList.toggle('active')
-            document.body.classList.toggle('non-scroll')
             menuEl.classList.toggle('active')
         })
 
         window.addEventListener('click', function(e) {
             if (!e.target.closest('.mobile__menu') && !e.target.closest('.header__block-burger')) {
                 triggerBtn.classList.remove('active')
-                document.body.classList.remove('non-scroll')
                 menuEl.classList.remove('active')
             }
         }) 
